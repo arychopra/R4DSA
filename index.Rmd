@@ -1,5 +1,24 @@
 ---
-title: "R for Data Science &amp; Analytics"
+title: "R for Data Science and Analytics"
 site: distill::distill_website
 listing: posts
 ---
+<style>
+
+.distill-site-header {
+  --title-size:       20px;         
+  --text-color:       #434343;            
+  --text-size:        20px;                      
+  --hover-color:      rgb(249, 83, 85);         
+  --bkgd-color:       #FFF2CC;                
+}
+
+body {
+  background-image:	url('/D:/arychopra/R4DSA/Background_WelcomePage.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+
+
+</style>

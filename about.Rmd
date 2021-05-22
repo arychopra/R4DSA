@@ -7,3 +7,7 @@ description: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Images attributes:
+<a href="https://storyset.com/business">Illustration by Freepik Storyset</a>
+<a href="https://storyset.com/data">Illustration by Freepik Storyset</a>
