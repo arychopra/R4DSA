@@ -1,8 +1,7 @@
 ---
 title: "Welcome to R for Data Science and Analytics"
 description: |
-  Welcome to our new blog, R for Data Science &amp; Analytics. We hope you enjoy 
-  reading what we have to say!
+  Welcome to our new blog, R for Data Science and Analytics. 
 author:
   - name: Aryah U. Chopra
     url: https://linkedin.com/in/aryah-u-abb6a0134
@@ -22,6 +21,3 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/blog.html
 
 ```
-
-
-

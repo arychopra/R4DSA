@@ -2,7 +2,7 @@
   {
     "path": "posts/welcome/",
     "title": "Welcome to R for Data Science and Analytics",
-    "description": "Welcome to our new blog, R for Data Science &amp; Analytics. We hope you enjoy \nreading what we have to say!",
+    "description": "Welcome to our new blog, R for Data Science and Analytics.",
     "author": [
       {
         "name": "Aryah U. Chopra",
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-05-22T10:26:06+08:00",
-    "input_file": "welcome.utf8.md"
+    "last_modified": "2021-05-22T12:17:19+08:00",
+    "input_file": {}
   }
 ]

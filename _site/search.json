@@ -12,8 +12,8 @@
       "path": "index.html",
       "title": "R for Data Science and Analytics",
       "author": [],
-      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       20px;         \r\n  --text-color:       #434343;            \r\n  --text-size:        20px;                      \r\n  --hover-color:      rgb(249, 83, 85);         \r\n  --bkgd-color:       #FFF2CC;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/D:/arychopra/R4DSA/Background_WelcomePage.png');\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-22T00:53:41+08:00"
+      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       20px;         \r\n  --text-color:       #434343;            \r\n  --text-size:        20px;                      \r\n  --hover-color:      rgb(249, 83, 85);         \r\n  --bkgd-color:       #FFF2CC;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/Background_WelcomePage.png');\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-05-22T13:36:58+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
