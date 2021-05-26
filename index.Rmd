@@ -6,15 +6,17 @@ listing: posts
 <style>
 
 .distill-site-header {
-  --title-size:       20px;         
+  --title-size:       16px;         
   --text-color:       #FFFFFF;            
-  --text-size:        20px;                      
+  --text-size:        16px;                      
   --hover-color:      rgb(249, 83, 85);         
   --bkgd-color:       #455A64;                
 }
 
 body {
   background-image:	url('/Background_WelcomePage.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: auto;
 }
+
+</style>
