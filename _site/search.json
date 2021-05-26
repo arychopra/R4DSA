@@ -12,8 +12,8 @@
       "path": "index.html",
       "title": "R for Data Science and Analytics",
       "author": [],
-      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       20px;         \r\n  --text-color:       #434343;            \r\n  --text-size:        20px;                      \r\n  --hover-color:      rgb(249, 83, 85);         \r\n  --bkgd-color:       #FFF2CC;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/Background_WelcomePage.png');\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-26T16:19:53+08:00"
+      "contents": "\r\n\r\n<p>.distill-site-header { –title-size: 20px;<br />\r\n–text-color: #FFFFFF;<br />\r\n–text-size: 20px;<br />\r\n–hover-color: rgb(249, 83, 85);<br />\r\n–bkgd-color: #455A64;<br />\r\n}<\/p>\r\n<p>body { background-image: url(‘/Background_WelcomePage.png’); background-image: url(‘/D:/arychopra/R4DSA/Background_WelcomePage.png’); background-repeat: no-repeat; background-size: auto; }<\/p>\r\n<div class=\"sourceCode\" id=\"cb1\"><pre class=\"sourceCode r distill-force-highlighting-css\"><code class=\"sourceCode r\"><\/code><\/pre><\/div>\r\n<!--radix_placeholder_article_footer-->\r\n<!--/radix_placeholder_article_footer-->\r\n<\/div>\r\n\r\n<div class=\"d-appendix\">\r\n<\/div>\r\n\r\n\r\n<!--radix_placeholder_site_after_body-->\r\n<!--/radix_placeholder_site_after_body-->\r\n<!--radix_placeholder_appendices-->\r\n<div class=\"appendix-bottom\"><\/div>\r\n<!--/radix_placeholder_appendices-->\r\n<!--radix_placeholder_navigation_after_body-->\r\n<!--/radix_placeholder_navigation_after_body-->\r\n\r\n<\/body>\r\n\r\n<\/html>\r\n",
+      "last_modified": "2021-05-27T00:26:07+08:00"
     }
   ],
   "collections": ["posts/posts.json"]

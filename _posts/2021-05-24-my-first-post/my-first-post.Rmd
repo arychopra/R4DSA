@@ -4,7 +4,7 @@ description: |
   A Visualisation of Singapore's Merchandise Trade Volume with it's Top 6 Countries
 author:
   - name: Aryah U. Chopra
-    url: 
+    url: https://arychopra.netlify.app/
 date: 05-24-2021
 output:
   distill::distill_article:
@@ -13,7 +13,6 @@ output:
 editor_options: 
   chunk_output_type: inline
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -35,7 +34,6 @@ They are identified as:
 This period of time is especially crucial (and interesting) as it is one of the most tumultuous times the world has faced, with nearly all sectors taking a massive hit -- *The COVID-19 Pandemic*.
 
 The data was retrieved from the [Department of Statistics, Singapore (DOS)](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data).
-
 
 ## 2: Original Data Visualization
 The following is the original chart that was prepared.
@@ -95,7 +93,7 @@ The chart falters as such:
 
 5. There is no mention of the source of data. This makes it unclear to the user as to whether the chart comes from a reliable data source or not. 
 
-6. The chart fails to indicate that the values indicated on the charts are in fact in Trillions or that it is in USD. The raw data is actually scaled down by a thousand. 
+6. The chart fails to indicate that the values indicated on the charts are in fact in billions or the currency it is in. The raw data is actually scaled down by a thousand. 
 
 
 ### 2.1: Critique: Aesthetics
@@ -131,13 +129,44 @@ The chart falters as such:
    ```
    
 5. The distance of the axis labels is also not standardized across the panels.
+
    ```{r}
    knitr::include_graphics('images/Picture1-7.png')
    ```
    
 ## 3: Alternative Design
 
-*Insert chart* 
+The initial sketch of the chart:
+
+```{r}
+knitr::include_graphics(path = 'images/Picture_3-1.png')
+```
+
+<u>Issues Addressed</u>
+
+1. Clarity - Point 1
+The title will be concise, implying year 2019 *and* 2020. In addition to that, it will state that the import and export terms are relative to Singapore. 
+
+2. Clarity - Point 2
+X-axis will be marked according to Month, with only the major ticks labeled. This will remove ambiguity from the previous design and also not crowd the axis too much.
+
+3. Clarity - Point 3 & Point 4
+The dual axis will by synchronized and shared between countries so that directly comparison can be made between countries as well as within their respective imports and exports.
+
+4. Clarity - Point 5
+The source of the data will included at the bottom of the chart. This will not only highlight that the data is from a reliable source, but also highlight that the import and export is relative to Singapore. 
+
+5. Clarity - Point 6
+For the Import and Export values, the raw value in billions will be reflected and the currency will also be stated as (SGD).
+
+6. Aesthetics - Point 1 & Point 2
+A line chart will be used so that the movements of the graph are clear. In addition to that, another chart will be created, Export - Import, to see the difference in values which perhaps the earlier visualization tried to show using a compound line chart.
+
+7. Aesthetics - Point 3 
+The label of the title will be larger than that of the countries as well as the font type. 
+
+8. Aesthetics - Point 4 & Point 5
+The facet will be equally split into 6 panels, one for each country and the axis will be shared. This will ensure that they are of equal size. 
 
 ## 4. Building the Alternative Design
 
@@ -154,9 +183,6 @@ The figure below shows a snapshot of the data:
    knitr::include_graphics(path='images/Picture_4-1.png')
    ```
    
-   ```{r, fig.cap= "Snapshot of the raw data"}
-   knitr::include_graphics(path='images/Picture_4-1.png')
-   ```
 Things to Note:
 * Data starts at Row 6
 * The dates are in columns i.e. data needs to be transposed
@@ -165,12 +191,14 @@ Things to Note:
 ### 4.2 Data Preparation
 
 1. First, launch the Tableau Desktop software.
+
 2. Import the Data.
    From the local directory where the `Raw_Data.csv` is saved, drag and drop into the homepage as shown:
    
    ```{r, fig.cap = "Tableau Start Page"}
    knitr::include_graphics(path='images/Picture_4-2.png')
    ```
+   
 3. We will see this screen once the data is loaded.
 
    ```{r, fig.cap = "Tableau Workspace"}
@@ -181,11 +209,13 @@ Things to Note:
    ```{r, fig.cap = "Data Interpreter"}
    knitr::include_graphics(path='images/Picture_4-4.png')
    ```
+   
 4. Drag `T1` into the workspace. The data, highlighted in purple, will appear. 
 
    ```{r, fig.cap = "T1 Data Preview"}
    knitr::include_graphics(path='images/Picture_4-5.png')
    ```
+   
 5. Country Filter
 
    Since, we only require the 6 countries, a filter will be applied. 
@@ -211,6 +241,7 @@ Things to Note:
    ```{r, fig.cap = 'Commit the changes'}
    knitr::include_graphics(path='images/Picture_4-9.png')
    ```
+   
 6. Pivot the table.
 
    Select all the columns: Click the first column + shift + Click the last column
@@ -224,9 +255,10 @@ Things to Note:
    ```{r, fig.cap = 'Output of Pivotted Table'}
    knitr::include_graphics(path='images/Picture_4-11.png')
    ```
+   
 7. Formatting & Renaming the columns.
    
-   Formatting:
+   <u>Formatting:</u>
 
    Select the `Abc` icon (which indicated string format) on the top left hand corner of the date column as shown in Box     
    Right click and select `Date`.
@@ -235,7 +267,7 @@ Things to Note:
    ```{r, fig.cap='Changing Date Format'}
    knitr::include_graphics(path='images/Picture_4-12.png')
    ```
-   Renaming:
+   <u>Renaming:</u>
 
    Right click on the column one-by-one and select `Rename`. 
    Rename the respective columns to `Date`, `Import Value` and `Country`
@@ -248,6 +280,7 @@ Things to Note:
    ```{r, fig.cap='Output after Rename & Format change'}
    knitr::include_graphics(path='images/Picture_4-14.png')
    ```
+   
 8. Date Filter
    
    Since we only require years 2019 & 2020, we will add another filter. 
@@ -275,8 +308,6 @@ Things to Note:
    ```{r, fig.cap='Commit the Changes'}
    knitr::include_graphics(path='images/Picture_4-19.png')
    ```
-   <!--![](images/Picture_4-19.png){width=40%}-->
-
 10. Repeat the steps above for T2 and export the data as `Export_Data.csv`
 
     ```{r, fig.cap='Save the Data'}
@@ -291,8 +322,7 @@ Things to Note:
     ```{r,fig.cap='Drag Import_Data'}
     knitr::include_graphics(path='images/Picture_4-21.png')
     ```
-    <!--![](images/Picture_4-21.png){width=80%}-->
-   
+
     If the Export_Data.csv file does not appear, go to `Connections` and click `Add` as shown below:
     
     ```{r,fig.cap='Adding Export_Data.csv'}
@@ -307,8 +337,6 @@ Things to Note:
     ```{r,fig.cap='Merging files'}
     knitr::include_graphics(path='images/Picture_4-23.png')
     ```
-    
-    <!--![](images/Picture_4-23.png){width=80%}-->
     
     The data below will be updated and we will see as follows:<br>
     We can see that the the icon in the `Import_Data.csv` node is updated to show that it is a merged table.<br>
@@ -370,11 +398,13 @@ Things to Note:
    ```{r,fig.cap='Create chart'}
    knitr::include_graphics(path='images/Picture_4-30.png')
    ```
+   
 3. Change year to month parameter by clicking on the square icon and selecting `Month`
 
    ```{r,fig.cap='Change year to month'}
    knitr::include_graphics(path='images/Picture_4-31.png')
    ```
+   
 4. Create a dual axis
    
    Hold and drag the `Import Value` to the right edge of the chart. 
@@ -387,6 +417,7 @@ Things to Note:
    ```{r,fig.cap='Synchronize axis'}
    knitr::include_graphics(path='images/Picture_4-33.png')
    ```
+   
 5. Editing the X-axis
 
    Right click on the x-axis and select `Edit Axis`.
@@ -414,6 +445,7 @@ Things to Note:
    ```{r,fig.cap='Changes to x-axis format'}
    knitr::include_graphics(path='images/Picture_4-38.png')
    ```
+   
 6. Changing the Chart Features
 
    Size of Line Chart:<br>
@@ -445,6 +477,7 @@ Things to Note:
    ```{r,fig.cap='Title to Add'}
    knitr::include_graphics(path='images/Picture_4-43.png')
    ```
+   
 7. Adding `Export-Import` 
    Drag and drop `Export-Import` twice on to the `Rows` bar. 
    
@@ -475,6 +508,7 @@ Things to Note:
    ```{r,fig.cap='Changing opacity'}
    knitr::include_graphics(path='images/Picture_4-49.png')
    ```
+   
 8. Edit the legend
    With the newly created bar chart, we will change the color gradient so that it shows red for negative values and green for positive.
    
@@ -499,13 +533,13 @@ Things to Note:
    ```{r, out.width=200,out.height=400,fig.cap='Row settings'}
    knitr::include_graphics(path='images/Picture_4-53.png')
    ```
-
+   
 10. Annotations will be made in the chart.
 
     To do so, right click, select `Annotate` and `Point` to make the annotation. 
     
     For further formatting to change the annotation bubble shape, right click on the text box and select `Format` 
-
+    
 11. Lastly, caption will be added to refer to the data source.
     
     Right click on the bar right below the x-axis and select Caption. 
@@ -525,5 +559,8 @@ The final visualization is as follows:
    knitr::include_graphics(path='images/Picture_5-1.png')
    ```
 ## 6. Insights
+
+1. Hong Kong is a Net Importer
+We can see that. The Balance of Trade has large positive values
 
 

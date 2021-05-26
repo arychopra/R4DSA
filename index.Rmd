@@ -7,10 +7,10 @@ listing: posts
 
 .distill-site-header {
   --title-size:       20px;         
-  --text-color:       #434343;            
+  --text-color:       #FFFFFF;            
   --text-size:        20px;                      
   --hover-color:      rgb(249, 83, 85);         
-  --bkgd-color:       #FFF2CC;                
+  --bkgd-color:       #455A64;                
 }
 
 body {
@@ -18,7 +18,3 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
 }
-
-
-
-</style>

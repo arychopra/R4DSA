@@ -10,4 +10,4 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Images attributes:
 <a href="https://storyset.com/business">Illustration by Freepik Storyset</a>
-<a href="https://storyset.com/data">Illustration by Freepik Storyset</a>
+<a href="https://slidesgo.com/theme/economics-thesis#search-economics&position-0&results-4">Slidesgo.com</a>
