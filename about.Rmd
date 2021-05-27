@@ -1,6 +1,6 @@
 ---
-title: "About this Blog"
-description: "Data Scientist under Construction!" 
+title: "A Data Analyst in the Making"
+description: "<i>There is no such thing as information overload, just bad design. If something is cluttered and/or confusing, fix your design</i> <br> - Edward Tufte <br><br>" 
 ---
 
 ```{r setup, include=FALSE}
@@ -9,25 +9,27 @@ knitr::opts_chunk$set(echo = FALSE)
 
 This blog is created & updated as a part of the coursework of Visual Analytics and Applications, taught by [Professor Kam Tin Seong](https://www.smu.edu.sg/faculty/profile/9618/KAM-Tin-Seong) at Singapore Management University.
 
-The posts are critiques and re-design of visualizations. 
+The posts are critiques and re-design of visualizations:
+
+_The purpose of the makeover is to improve on the original visualization. Focus on what works, what doesn’t work, why those things don’t work, and how you made it better. You should try stick to the fields in the data set provided and improve upon the original visualization. However, if supplementing the data helps you tell a better story, go for it!_
+
 
 As of 27th May 2021, the first Data Viz Visualization has been posted. 
 This is a re-design of the Merchandise Trade data of Singapore for 2019 & 2020. 
 
 
-_The purpose of the makeover is to improve on the original visualization. Focus on what works, what doesn’t work, why those things don’t work, and how you made it better. You should try stick to the fields in the data set provided and improve upon the original visualization. However, if supplementing the data helps you tell a better story, go for it!_
 
 
 
-The design of the blog was created with some graphics and CSS
+The design of the blog was created with some graphics and CSS:
 
-Image attributes:
+- Image attributes:
 
-<a href="https://storyset.com/business">Illustration by Freepik Storyset</a>
+  <a href="https://storyset.com/business">Illustration by Freepik Storyset</a>
 
-<a href="https://slidesgo.com/theme/economics-thesis#search-economics&position-0&results-4">Slidesgo.com</a>
+  <a href="https://slidesgo.com/theme/economics-thesis#search-economics&position-0&results-4">Slidesgo.com</a>
 
-CSS Inspiration:
+- CSS Inspiration:
 
-<a hred="https://csspoint101.com/30-css-animated-background/"> Designed by Carpe Numidium</a>
+  <a hred="https://csspoint101.com/30-css-animated-background/"> Designed by Carpe Numidium</a>
 

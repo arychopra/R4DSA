@@ -2,18 +2,18 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this Blog",
-      "description": "Data Scientist under Construction!",
+      "title": "A Data Analyst in the Making",
+      "description": "<i>There is no such thing as information overload, just bad design. If something is cluttered and/or confusing, fix your design<\/i> <br> - Edward Tufte <br><br>",
       "author": [],
-      "contents": "\r\nThis blog is created & updated as a part of the coursework of Visual Analytics and Applications, taught by Professor Kam Tin Seong at Singapore Management University.\r\nThe posts are critiques and re-design of visualizations.\r\nAs of 27th May 2021, the first Data Viz Visualization has been posted. This is a re-design of the Merchandise Trade data of Singapore for 2019 & 2020.\r\nThe purpose of the makeover is to improve on the original visualization. Focus on what works, what doesn’t work, why those things don’t work, and how you made it better. You should try stick to the fields in the data set provided and improve upon the original visualization. However, if supplementing the data helps you tell a better story, go for it!\r\nThe design of the blog was created with some graphics and CSS\r\nImage attributes:\r\nIllustration by Freepik Storyset\r\nSlidesgo.com\r\nCSS Inspiration:\r\n Designed by Carpe Numidium\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-27T11:15:26+08:00"
+      "contents": "\r\nThis blog is created & updated as a part of the coursework of Visual Analytics and Applications, taught by Professor Kam Tin Seong at Singapore Management University.\r\nThe posts are critiques and re-design of visualizations:\r\nThe purpose of the makeover is to improve on the original visualization. Focus on what works, what doesn’t work, why those things don’t work, and how you made it better. You should try stick to the fields in the data set provided and improve upon the original visualization. However, if supplementing the data helps you tell a better story, go for it!\r\nAs of 27th May 2021, the first Data Viz Visualization has been posted. This is a re-design of the Merchandise Trade data of Singapore for 2019 & 2020.\r\nThe design of the blog was created with some graphics and CSS:\r\nImage attributes:\r\nIllustration by Freepik Storyset\r\nSlidesgo.com\r\nCSS Inspiration:\r\n Designed by Carpe Numidium\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-05-27T14:11:01+08:00"
     },
     {
       "path": "index.html",
       "title": "R for Data Science and Analytics",
       "author": [],
-      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       16px;         \r\n  --text-color:       #FFFFFF;            \r\n  --text-size:        16px;                      \r\n  --hover-color:      rgb(249, 83, 85);         \r\n  --bkgd-color:       #455A64;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/Background_WelcomePage.png');\r\n  background-repeat: repeat-y;\r\n  background-size: auto;\r\n}\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-27T11:14:54+08:00"
+      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       16px;         \r\n  --text-color:       #FFFFFF;            \r\n  --text-size:        16px;                      \r\n  --hover-color:      rgb(135, 203, 61);         \r\n  --bkgd-color:       #455A64;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/Background_WelcomePage.png');\r\n  background-repeat: no-repeat;\r\n  background-size: auto;\r\n}\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-05-27T14:09:11+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
