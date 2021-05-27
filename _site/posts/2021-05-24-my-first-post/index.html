@@ -2507,11 +2507,11 @@ d-appendix d-footnote-list a.footnote-backlink {
 <li><a href="#critique-clarity">2.1: Critique: Clarity</a></li>
 <li><a href="#critique-aesthetics">2.1: Critique: Aesthetics</a></li>
 </ul></li>
-<li><a href="#alternative-design">3: Alternative Design</a></li>
+<li><a href="#design-sketches">3: Design Sketches</a></li>
 <li><a href="#building-the-alternative-design">4. Building the Alternative Design</a><ul>
 <li><a href="#the-data">4.1 The Data</a></li>
 <li><a href="#data-preparation">4.2 Data Preparation</a></li>
-<li><a href="#visualization">4.3 Visualization</a></li>
+<li><a href="#creating-the-chart">4.3 Creating the Chart</a></li>
 </ul></li>
 <li><a href="#final-visualization">5. Final Visualization</a></li>
 <li><a href="#insights">6. Insights</a></li>
@@ -2532,12 +2532,12 @@ d-appendix d-footnote-list a.footnote-backlink {
 <p>This period of time is especially crucial (and interesting) as it is one of the most tumultuous times the world has faced, with nearly all sectors taking a massive hit – <em>The COVID-19 Pandemic</em>.</p>
 <p>The data was retrieved from the <a href="https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data">Department of Statistics, Singapore (DOS)</a>.</p>
 <h2 id="original-data-visualization">2: Original Data Visualization</h2>
-<p>The following is the original chart that was prepared.</p>
+<p>The following is the original chart that was prepared:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-1"></span>
-<img src="images/Picture1.png" alt="images/Picture1.png" width="439" />
+<img src="images/Picture1.png" alt="Original Chart" width="554" height="307" style="margin-left: 25px;" />
 <p class="caption">
-Figure 1: images/Picture1.png
+Figure 1: Original Chart
 </p>
 </div>
 </div>
@@ -2550,17 +2550,32 @@ Figure 1: images/Picture1.png
 <p>The x-axis adds to the ambiguity of the title. For example, for the Japan panel, there is only 2020 whereas for the others, there is 2019 - 2021.</p>
 <p>Example:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture1-1.png" width="554" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<img src="images/Picture1-1.png" alt="Misleading Title" width="554" />
+<p class="caption">
+Figure 2: Misleading Title
+</p>
+</div>
 </div></li>
 <li><p>Mismatch of Axis: The x-axis is labeled as ‘Month of Period’, however, the ticks are labeled by the year.</p>
 <p>Example:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture1-2.png" width="554" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<img src="images/Picture1-2.png" alt="Misleading x-axis" width="554" />
+<p class="caption">
+Figure 3: Misleading x-axis
+</p>
+</div>
 </div></li>
 <li><p>Mismatched Dual-Axis: The import and export y-axis scales are not synchronized, as a result it creates ambiguity.</p>
 <p>Example:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture1-3.png" width="554" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<img src="images/Picture1-3.png" alt="Mismatched Dual Axis" width="554" />
+<p class="caption">
+Figure 4: Mismatched Dual Axis
+</p>
+</div>
 </div>
 <p><u>In the case of Hong Kong:</u></p>
 <p>There is the illusion that exports are only slightly higher than the import volume across any one time period, however that is not the case. In fact, the exports are much higher than the imports.</p>
@@ -2578,7 +2593,12 @@ Figure 1: images/Picture1.png
 <ol type="1">
 <li><p>The alpha (opacity) ratio of the chart is too high. It creates a murky look to areas where the chart overlaps as shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture1-4.png" width="554" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-5"></span>
+<img src="images/Picture1-4.png" alt="Murky look" width="554" />
+<p class="caption">
+Figure 5: Murky look
+</p>
+</div>
 </div></li>
 <li><p>The compound line graph is perhaps not the correct visualization technique for this, and it is poorly executed as well.</p>
 <p>The compound line graph is usually used so show the proportion of components that make up some aggregate variable. As such, the differences between the points across a certain time period would give actual values.</p>
@@ -2586,21 +2606,41 @@ Figure 1: images/Picture1.png
 <p>A line graph would be a better and cleaner visualization choice.</p></li>
 <li><p>The labels for each panel of the facet grid is larger than the title. And the font type is also not standardized across the chart.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture1-5.png" width="554" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-6"></span>
+<img src="images/Picture1-5.png" alt="Unchecked font sizes" width="554" />
+<p class="caption">
+Figure 6: Unchecked font sizes
+</p>
+</div>
 </div></li>
 <li><p>The widths of each panel is not the same.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture1-6.png" width="554" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-7"></span>
+<img src="images/Picture1-6.png" alt="Unequal Width of the Panel" width="554" />
+<p class="caption">
+Figure 7: Unequal Width of the Panel
+</p>
+</div>
 </div></li>
 <li><p>The distance of the axis labels is also not standardized across the panels.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture1-7.png" width="554" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-8"></span>
+<img src="images/Picture1-7.png" alt="Unequal distance of y-axis labels" width="554" />
+<p class="caption">
+Figure 8: Unequal distance of y-axis labels
+</p>
+</div>
 </div></li>
 </ol>
-<h2 id="alternative-design">3: Alternative Design</h2>
+<h2 id="design-sketches">3: Design Sketches</h2>
 <p>The initial sketch of the chart:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images/Picture_3-1.png" width="751" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-9"></span>
+<img src="images/Picture_3-1.png" alt="Initial Sketch" width="751" />
+<p class="caption">
+Figure 9: Initial Sketch
+</p>
+</div>
 </div>
 <p><u>Issues Addressed</u></p>
 <ol type="1">
@@ -2615,17 +2655,27 @@ Figure 1: images/Picture1.png
 </ol>
 <h2 id="building-the-alternative-design">4. Building the Alternative Design</h2>
 <h3 id="the-data">4.1 The Data</h3>
-<p>The raw data is in <code>.xlsx</code> format. It contains 2 sheets: * T1 : Merchandise Imports by Region/Market, Monthly * T2 : Merchandise Exports by Region/Market, Monthly</p>
+<p>The raw data is in <code>.xlsx</code> format.</p>
+<p>It contains 2 sheets:</p>
+<ul>
+<li>T1 : Merchandise Imports by Region/Market, Monthly</li>
+<li>T2 : Merchandise Exports by Region/Market, Monthly</li>
+</ul>
 <p>The figure below shows a snapshot of the data:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-10"></span>
 <img src="images/Picture_4-1.png" alt="Snapshot of the raw data" width="332" />
 <p class="caption">
-Figure 2: Snapshot of the raw data
+Figure 10: Snapshot of the raw data
 </p>
 </div>
 </div>
-<p>Things to Note: * Data starts at Row 6 * The dates are in columns i.e. data needs to be transposed * The 6 countries need to be filtered out</p>
+<p>Things to Note:</p>
+<ul>
+<li>Data starts at Row 6</li>
+<li>The dates are in columns i.e. data needs to be transposed</li>
+<li>The 6 countries need to be filtered out</li>
+</ul>
 <h3 id="data-preparation">4.2 Data Preparation</h3>
 <ol type="1">
 <li><p>First, launch the Tableau Desktop software.</p></li>
@@ -2634,7 +2684,7 @@ Figure 2: Snapshot of the raw data
 <div class="figure"><span id="fig:unnamed-chunk-11"></span>
 <img src="images/Picture_4-2.png" alt="Tableau Start Page" width="386" />
 <p class="caption">
-Figure 3: Tableau Start Page
+Figure 11: Tableau Start Page
 </p>
 </div>
 </div></li>
@@ -2643,7 +2693,7 @@ Figure 3: Tableau Start Page
 <div class="figure"><span id="fig:unnamed-chunk-12"></span>
 <img src="images/Picture_4-3.png" alt="Tableau Workspace" width="304" />
 <p class="caption">
-Figure 4: Tableau Workspace
+Figure 12: Tableau Workspace
 </p>
 </div>
 </div>
@@ -2652,7 +2702,7 @@ Figure 4: Tableau Workspace
 <div class="figure"><span id="fig:unnamed-chunk-13"></span>
 <img src="images/Picture_4-4.png" alt="Data Interpreter" width="234" />
 <p class="caption">
-Figure 5: Data Interpreter
+Figure 13: Data Interpreter
 </p>
 </div>
 </div></li>
@@ -2661,18 +2711,18 @@ Figure 5: Data Interpreter
 <div class="figure"><span id="fig:unnamed-chunk-14"></span>
 <img src="images/Picture_4-5.png" alt="T1 Data Preview" width="525" />
 <p class="caption">
-Figure 6: T1 Data Preview
+Figure 14: T1 Data Preview
 </p>
 </div>
 </div></li>
 <li><p>Country Filter</p>
-<p>Since, we only require the 6 countries, a filter will be applied. The sequence steps are highlighted in the following:</p>
+<p>Since, we only require the 6 countries, a filter will be applied. <br> The sequence steps are highlighted in the following:</p>
 <p>Click on the <code>Add|Filter</code> button (Box 1) and then <code>Add..</code>(Box 2)</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-15"></span>
 <img src="images/Picture_4-6.png" alt="Adding filter" width="584" />
 <p class="caption">
-Figure 7: Adding filter
+Figure 15: Adding filter
 </p>
 </div>
 </div>
@@ -2681,7 +2731,7 @@ Figure 7: Adding filter
 <div class="figure"><span id="fig:unnamed-chunk-16"></span>
 <img src="images/Picture_4-7.png" alt="Select Variables" width="210" />
 <p class="caption">
-Figure 8: Select Variables
+Figure 16: Select Variables
 </p>
 </div>
 </div>
@@ -2690,7 +2740,7 @@ Figure 8: Select Variables
 <div class="figure"><span id="fig:unnamed-chunk-17"></span>
 <img src="images/Picture_4-8.png" alt="Select Countries" width="212" />
 <p class="caption">
-Figure 9: Select Countries
+Figure 17: Select Countries
 </p>
 </div>
 </div>
@@ -2699,17 +2749,17 @@ Figure 9: Select Countries
 <div class="figure"><span id="fig:unnamed-chunk-18"></span>
 <img src="images/Picture_4-9.png" alt="Commit the changes" width="299" />
 <p class="caption">
-Figure 10: Commit the changes
+Figure 18: Commit the changes
 </p>
 </div>
 </div></li>
 <li><p>Pivot the table.</p>
-<p>Select all the columns: Click the first column + shift + Click the last column Right click to get the drop down list as shown below, and select <code>Pivot</code></p>
+<p>Select all the columns: Click the first column + shift + Click the last column. <br> Right click to get the drop down list as shown below, and select <code>Pivot</code></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-19"></span>
 <img src="images/Picture_4-10.png" alt="Pivot table" width="526" />
 <p class="caption">
-Figure 11: Pivot table
+Figure 19: Pivot table
 </p>
 </div>
 </div>
@@ -2718,7 +2768,7 @@ Figure 11: Pivot table
 <div class="figure"><span id="fig:unnamed-chunk-20"></span>
 <img src="images/Picture_4-11.png" alt="Output of Pivotted Table" width="310" />
 <p class="caption">
-Figure 12: Output of Pivotted Table
+Figure 20: Output of Pivotted Table
 </p>
 </div>
 </div></li>
@@ -2730,7 +2780,7 @@ Right click and select <code>Date</code>. This will change the format of the col
 <div class="figure"><span id="fig:unnamed-chunk-21"></span>
 <img src="images/Picture_4-12.png" alt="Changing Date Format" width="384" />
 <p class="caption">
-Figure 13: Changing Date Format
+Figure 21: Changing Date Format
 </p>
 </div>
 </div>
@@ -2740,7 +2790,7 @@ Figure 13: Changing Date Format
 <div class="figure"><span id="fig:unnamed-chunk-22"></span>
 <img src="images/Picture_4-13.png" alt="Renaming the Columns" width="385" />
 <p class="caption">
-Figure 14: Renaming the Columns
+Figure 22: Renaming the Columns
 </p>
 </div>
 </div>
@@ -2749,7 +2799,7 @@ Figure 14: Renaming the Columns
 <div class="figure"><span id="fig:unnamed-chunk-23"></span>
 <img src="images/Picture_4-14.png" alt="Output after Rename &amp; Format change" width="306" />
 <p class="caption">
-Figure 15: Output after Rename &amp; Format change
+Figure 23: Output after Rename &amp; Format change
 </p>
 </div>
 </div></li>
@@ -2760,7 +2810,7 @@ Figure 15: Output after Rename &amp; Format change
 <div class="figure"><span id="fig:unnamed-chunk-24"></span>
 <img src="images/Picture_4-15.png" alt="Adding Year filter" width="309" />
 <p class="caption">
-Figure 16: Adding Year filter
+Figure 24: Adding Year filter
 </p>
 </div>
 </div>
@@ -2768,7 +2818,7 @@ Figure 16: Adding Year filter
 <div class="figure"><span id="fig:unnamed-chunk-25"></span>
 <img src="images/Picture_4-16.png" alt="Select Data variable" width="212" />
 <p class="caption">
-Figure 17: Select Data variable
+Figure 25: Select Data variable
 </p>
 </div>
 </div>
@@ -2776,7 +2826,7 @@ Figure 17: Select Data variable
 <div class="figure"><span id="fig:unnamed-chunk-26"></span>
 <img src="images/Picture_4-17.png" alt="Selecting Years" width="212" />
 <p class="caption">
-Figure 18: Selecting Years
+Figure 26: Selecting Years
 </p>
 </div>
 </div>
@@ -2784,7 +2834,7 @@ Figure 18: Selecting Years
 <div class="figure"><span id="fig:unnamed-chunk-27"></span>
 <img src="images/Picture_4-18.png" alt="Selecting 2019 &amp; 2020" width="212" />
 <p class="caption">
-Figure 19: Selecting 2019 &amp; 2020
+Figure 27: Selecting 2019 &amp; 2020
 </p>
 </div>
 </div></li>
@@ -2794,7 +2844,7 @@ Figure 19: Selecting 2019 &amp; 2020
 <div class="figure"><span id="fig:unnamed-chunk-28"></span>
 <img src="images/Picture_4-19.png" alt="Commit the Changes" width="309" />
 <p class="caption">
-Figure 20: Commit the Changes
+Figure 28: Commit the Changes
 </p>
 </div>
 </div></li>
@@ -2803,7 +2853,7 @@ Figure 20: Commit the Changes
 <div class="figure"><span id="fig:unnamed-chunk-29"></span>
 <img src="images/Picture_4-20.png" alt="Save the Data" width="198" />
 <p class="caption">
-Figure 21: Save the Data
+Figure 29: Save the Data
 </p>
 </div>
 </div></li>
@@ -2813,7 +2863,7 @@ Figure 21: Save the Data
 <div class="figure"><span id="fig:unnamed-chunk-30"></span>
 <img src="images/Picture_4-21.png" alt="Drag Import_Data" width="549" />
 <p class="caption">
-Figure 22: Drag Import_Data
+Figure 30: Drag Import_Data
 </p>
 </div>
 </div>
@@ -2822,17 +2872,16 @@ Figure 22: Drag Import_Data
 <div class="figure"><span id="fig:unnamed-chunk-31"></span>
 <img src="images/Picture_4-22.png" alt="Adding Export_Data.csv" width="240" />
 <p class="caption">
-Figure 23: Adding Export_Data.csv
+Figure 31: Adding Export_Data.csv
 </p>
 </div>
 </div></li>
-<li><p>Merge the files Now, we will merge the two .csv files on <code>Date</code> &amp; <code>Country.</code></p>
-<p>Double click on <code>Import_data.csv</code> in the workspace and then drag <code>Export_Data.csv</code> in.<br> Next, click on the Venn Diagram icon add <code>Date.</code></p>
+<li><p>Merge the files. Now, we will merge the two .csv files on <code>Date</code> &amp; <code>Country.</code><br> Double click on <code>Import_data.csv</code> in the workspace and then drag <code>Export_Data.csv</code> in.<br> Next, click on the Venn Diagram icon add <code>Date.</code></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-32"></span>
 <img src="images/Picture_4-23.png" alt="Merging files" width="598" />
 <p class="caption">
-Figure 24: Merging files
+Figure 32: Merging files
 </p>
 </div>
 </div>
@@ -2841,7 +2890,7 @@ Figure 24: Merging files
 <div class="figure"><span id="fig:unnamed-chunk-33"></span>
 <img src="images/Picture_4-24.png" alt="Output of merge" width="578" />
 <p class="caption">
-Figure 25: Output of merge
+Figure 33: Output of merge
 </p>
 </div>
 </div>
@@ -2850,7 +2899,7 @@ Figure 25: Output of merge
 <div class="figure"><span id="fig:unnamed-chunk-34"></span>
 <img src="images/Picture_4-25.png" alt="Hide un-needed columns" width="209" />
 <p class="caption">
-Figure 26: Hide un-needed columns
+Figure 34: Hide un-needed columns
 </p>
 </div>
 </div></li>
@@ -2861,7 +2910,7 @@ Figure 26: Hide un-needed columns
 <div class="figure"><span id="fig:unnamed-chunk-35"></span>
 <img src="images/Picture_4-26.png" alt="Create aliases" width="208" />
 <p class="caption">
-Figure 27: Create aliases
+Figure 35: Create aliases
 </p>
 </div>
 </div>
@@ -2869,7 +2918,7 @@ Figure 27: Create aliases
 <div class="figure"><span id="fig:unnamed-chunk-36"></span>
 <img src="images/Picture_4-27.png" alt="Type in the Country names" width="330" />
 <p class="caption">
-Figure 28: Type in the Country names
+Figure 36: Type in the Country names
 </p>
 </div>
 </div></li>
@@ -2880,7 +2929,7 @@ Figure 28: Type in the Country names
 <div class="figure"><span id="fig:unnamed-chunk-37"></span>
 <img src="images/Picture_4-28.png" alt="Create calculated field: Scale up by thousand" width="208" />
 <p class="caption">
-Figure 29: Create calculated field: Scale up by thousand
+Figure 37: Create calculated field: Scale up by thousand
 </p>
 </div>
 </div>
@@ -2888,7 +2937,7 @@ Figure 29: Create calculated field: Scale up by thousand
 <div class="figure"><span id="fig:unnamed-chunk-38"></span>
 <img src="images/Picture_4-29.png" alt="Formula" width="312" />
 <p class="caption">
-Figure 30: Formula
+Figure 38: Formula
 </p>
 </div>
 </div>
@@ -2898,7 +2947,7 @@ Figure 30: Formula
 <div class="figure"><span id="fig:unnamed-chunk-39"></span>
 <img src="images/Picture_4-29A.png" alt="Create calculated field: Export-Import" width="208" />
 <p class="caption">
-Figure 31: Create calculated field: Export-Import
+Figure 39: Create calculated field: Export-Import
 </p>
 </div>
 </div>
@@ -2906,12 +2955,12 @@ Figure 31: Create calculated field: Export-Import
 <div class="figure"><span id="fig:unnamed-chunk-40"></span>
 <img src="images/Picture_4-29B.png" alt="Formula" width="312" />
 <p class="caption">
-Figure 32: Formula
+Figure 40: Formula
 </p>
 </div>
 </div></li>
 </ol>
-<h3 id="visualization">4.3 Visualization</h3>
+<h3 id="creating-the-chart">4.3 Creating the Chart</h3>
 <ol type="1">
 <li><p>On the bottom left hand corner of window, click on the <code>Sheet</code> tab. This is where the chart is built.</p></li>
 <li><p>Drag and drop the variables (known as Measures in Tableau) into the are marked by <code>Columns</code> and <code>Rows</code> as shown below.</p>
@@ -2919,7 +2968,7 @@ Figure 32: Formula
 <div class="figure"><span id="fig:unnamed-chunk-41"></span>
 <img src="images/Picture_4-30.png" alt="Create chart" width="498" />
 <p class="caption">
-Figure 33: Create chart
+Figure 41: Create chart
 </p>
 </div>
 </div></li>
@@ -2928,7 +2977,7 @@ Figure 33: Create chart
 <div class="figure"><span id="fig:unnamed-chunk-42"></span>
 <img src="images/Picture_4-31.png" alt="Change year to month" width="221" />
 <p class="caption">
-Figure 34: Change year to month
+Figure 42: Change year to month
 </p>
 </div>
 </div></li>
@@ -2938,7 +2987,7 @@ Figure 34: Change year to month
 <div class="figure"><span id="fig:unnamed-chunk-43"></span>
 <img src="images/Picture_4-32.png" alt="Creating a dual axis" width="635" />
 <p class="caption">
-Figure 35: Creating a dual axis
+Figure 43: Creating a dual axis
 </p>
 </div>
 </div>
@@ -2947,7 +2996,7 @@ Figure 35: Creating a dual axis
 <div class="figure"><span id="fig:unnamed-chunk-44"></span>
 <img src="images/Picture_4-33.png" alt="Synchronize axis" width="148" />
 <p class="caption">
-Figure 36: Synchronize axis
+Figure 44: Synchronize axis
 </p>
 </div>
 </div></li>
@@ -2957,7 +3006,7 @@ Figure 36: Synchronize axis
 <div class="figure"><span id="fig:unnamed-chunk-45"></span>
 <img src="images/Picture_4-34.png" alt="Edit x-axis" width="148" />
 <p class="caption">
-Figure 37: Edit x-axis
+Figure 45: Edit x-axis
 </p>
 </div>
 </div>
@@ -2966,7 +3015,7 @@ Figure 37: Edit x-axis
 <div class="figure"><span id="fig:unnamed-chunk-46"></span>
 <img src="images/Picture_4-35.png" alt="General axis settings" width="220" />
 <p class="caption">
-Figure 38: General axis settings
+Figure 46: General axis settings
 </p>
 </div>
 </div>
@@ -2974,7 +3023,7 @@ Figure 38: General axis settings
 <div class="figure"><span id="fig:unnamed-chunk-47"></span>
 <img src="images/Picture_4-36.png" alt="Tick marks axis settings" width="220" />
 <p class="caption">
-Figure 39: Tick marks axis settings
+Figure 47: Tick marks axis settings
 </p>
 </div>
 </div>
@@ -2983,7 +3032,7 @@ Figure 39: Tick marks axis settings
 <div class="figure"><span id="fig:unnamed-chunk-48"></span>
 <img src="images/Picture_4-37.png" alt="Formating x-axis" width="148" />
 <p class="caption">
-Figure 40: Formating x-axis
+Figure 48: Formating x-axis
 </p>
 </div>
 </div>
@@ -2992,7 +3041,7 @@ Figure 40: Formating x-axis
 <div class="figure"><span id="fig:unnamed-chunk-49"></span>
 <img src="images/Picture_4-38.png" alt="Changes to x-axis format" width="356" />
 <p class="caption">
-Figure 41: Changes to x-axis format
+Figure 49: Changes to x-axis format
 </p>
 </div>
 </div></li>
@@ -3002,7 +3051,7 @@ Figure 41: Changes to x-axis format
 <div class="figure"><span id="fig:unnamed-chunk-50"></span>
 <img src="images/Picture_4-39.png" alt="Changing size of line chart" width="176" />
 <p class="caption">
-Figure 42: Changing size of line chart
+Figure 50: Changing size of line chart
 </p>
 </div>
 </div>
@@ -3011,7 +3060,7 @@ Figure 42: Changing size of line chart
 <div class="figure"><span id="fig:unnamed-chunk-51"></span>
 <img src="images/Picture_4-40.png" alt="Adding points to line chart" width="149" />
 <p class="caption">
-Figure 43: Adding points to line chart
+Figure 51: Adding points to line chart
 </p>
 </div>
 </div>
@@ -3020,7 +3069,7 @@ Figure 43: Adding points to line chart
 <div class="figure"><span id="fig:unnamed-chunk-52"></span>
 <img src="images/Picture_4-41.png" alt="Hide field label" width="347" />
 <p class="caption">
-Figure 44: Hide field label
+Figure 52: Hide field label
 </p>
 </div>
 </div>
@@ -3029,7 +3078,7 @@ Figure 44: Hide field label
 <div class="figure"><span id="fig:unnamed-chunk-53"></span>
 <img src="images/Picture_4-42.png" alt="Editing title" width="208" />
 <p class="caption">
-Figure 45: Editing title
+Figure 53: Editing title
 </p>
 </div>
 </div>
@@ -3037,7 +3086,7 @@ Figure 45: Editing title
 <div class="figure"><span id="fig:unnamed-chunk-54"></span>
 <img src="images/Picture_4-43.png" alt="Title to Add" width="335" />
 <p class="caption">
-Figure 46: Title to Add
+Figure 54: Title to Add
 </p>
 </div>
 </div></li>
@@ -3046,7 +3095,7 @@ Figure 46: Title to Add
 <div class="figure"><span id="fig:unnamed-chunk-55"></span>
 <img src="images/Picture_4-44.png" alt="Creating second chart" width="699" />
 <p class="caption">
-Figure 47: Creating second chart
+Figure 55: Creating second chart
 </p>
 </div>
 </div>
@@ -3063,16 +3112,16 @@ Figure 47: Creating second chart
 <div class="figure"><span id="fig:unnamed-chunk-58"></span>
 <img src="images/Picture_4-47.png" alt="Changing to bar chart" width="142" />
 <p class="caption">
-Figure 48: Changing to bar chart
+Figure 56: Changing to bar chart
 </p>
 </div>
 </div>
 <p>Once that is done, drag the <code>Export-Import</code> variable into the Color box and reduce the opacity.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-59"></span>
-<img src="images/Picture_4-48.png" alt="Adding color gradient to bar chart" width="158" />
+<img src="images/Picture_4-48.png" alt="Adding color gradient to bar chart" width="116" />
 <p class="caption">
-Figure 49: Adding color gradient to bar chart
+Figure 57: Adding color gradient to bar chart
 </p>
 </div>
 </div>
@@ -3080,7 +3129,7 @@ Figure 49: Adding color gradient to bar chart
 <div class="figure"><span id="fig:unnamed-chunk-60"></span>
 <img src="images/Picture_4-49.png" alt="Changing opacity" width="148" />
 <p class="caption">
-Figure 50: Changing opacity
+Figure 58: Changing opacity
 </p>
 </div>
 </div></li>
@@ -3090,7 +3139,7 @@ Figure 50: Changing opacity
 <div class="figure"><span id="fig:unnamed-chunk-61"></span>
 <img src="images/Picture_4-50.png" alt="Settings for color gradient" width="412" />
 <p class="caption">
-Figure 51: Settings for color gradient
+Figure 59: Settings for color gradient
 </p>
 </div>
 </div>
@@ -3101,7 +3150,7 @@ Figure 51: Settings for color gradient
 <div class="figure"><span id="fig:unnamed-chunk-62"></span>
 <img src="images/Picture_4-51.png" alt="Formatting gridlines" width="192" />
 <p class="caption">
-Figure 52: Formatting gridlines
+Figure 60: Formatting gridlines
 </p>
 </div>
 </div>
@@ -3110,7 +3159,7 @@ Figure 52: Formatting gridlines
 <div class="figure"><span id="fig:unnamed-chunk-63"></span>
 <img src="images/Picture_4-52.png" alt="Column settings" width="200" height="400" />
 <p class="caption">
-Figure 53: Column settings
+Figure 61: Column settings
 </p>
 </div>
 </div>
@@ -3118,7 +3167,7 @@ Figure 53: Column settings
 <div class="figure"><span id="fig:unnamed-chunk-64"></span>
 <img src="images/Picture_4-53.png" alt="Row settings" width="200" height="400" />
 <p class="caption">
-Figure 54: Row settings
+Figure 62: Row settings
 </p>
 </div>
 </div></li>
@@ -3131,7 +3180,7 @@ Figure 54: Row settings
 <div class="figure"><span id="fig:unnamed-chunk-65"></span>
 <img src="images/Picture_4-54.png" alt="Adding caption" width="231" />
 <p class="caption">
-Figure 55: Adding caption
+Figure 63: Adding caption
 </p>
 </div>
 </div></li>
@@ -3142,15 +3191,15 @@ Figure 55: Adding caption
 <p>It is as follows:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-66"></span>
-<img src="images/Picture_5-1.png" alt="Final Visualization" width="789" />
+<img src="images/Picture_5-1.png" alt="Final Visualization" width="693" />
 <p class="caption">
-Figure 56: Final Visualization
+Figure 64: Final Visualization
 </p>
 </div>
 </div>
 <h2 id="insights">6. Insights</h2>
 <ol type="1">
-<li><p><em>China</em></p>
+<li><p><strong>China</strong></p>
 <ul>
 <li><p>We can see that during the period of January &amp; February (both 2019 and 2020) trade falls sharply. This can be likely due to Chinese New Year celebrations during which many of the businesses are closed in China and Singapore.</p></li>
 <li><p>While the dip in Singapore’s imports can be observed in both 2019 and 2020, Singapore’s exports dipped in February 2020 and not February 2019.</p></li>
@@ -3159,33 +3208,36 @@ Figure 56: Final Visualization
 <ul>
 <li>There is a spike later in August 2020 which can be likely due to the recovering economy in China and <a href="https://www.straitstimes.com/business/economy/spore-exports-up-77-in-aug-boosting-outlook-for-full-year">increased demand for non-oil domestic exports(Nodx)</a></li>
 </ul></li>
-<li><p><em>Hong Kong </em></p>
+<li><p><strong>Hong Kong</strong></p>
 <ul>
 <li><p>Hong Kong is a net importer</p></li>
 <li><p>The trade surplus with Hong Kong increased from 2019 to 2020</p></li>
 <li><p>In 2019, Singapore’s imports increase from the period of February to April however, in 2020, the peak was much lower. This would be possibly due to the Pandemic with both countries seeing an uptick</p></li>
 <li><p>While in the previous year, exports increase from March to May, in 2020, the exports took a sharp dive. This is due to the <a href="https://www.straitstimes.com/singapore/coronavirus-empty-trains-and-quiet-streets-as-singapore-enters-day-1-of-circuit-breaker">circuit breaker in Singapore</a>.</p></li>
 </ul></li>
-<li><p><em>Japan</em></p>
+<li><p><strong>Japan</strong></p>
 <ul>
 <li>While the Balance of Trade suggests a general deficit, Singapore exported more from April to September 2020. This could likely be due to the <a href="https://www.marketwatch.com/story/japans-exports-fell-more-than-expected-in-march-2020-04-19">pandemic</a>.</li>
 </ul>
-<p>With China’s shutdown in response to the pandemic, <a href="https://www.japantimes.co.jp/news/2020/03/18/business/economy-business/japans-exports-fall-imports-china-slump-coronavirus-impact-widens/">Japan’s economy took a hit</a>.</p></li>
-<li><p><em>Malaysia</em></p>
+<p>With China’s lockdown in response to the pandemic disrupting supply chain, <a href="https://www.japantimes.co.jp/news/2020/03/18/business/economy-business/japans-exports-fall-imports-china-slump-coronavirus-impact-widens/">Japan’s economy took a hit</a>.</p></li>
+<li><p><strong>Malaysia</strong></p>
 <ul>
 <li><p>The Balance of Trade is approximately around 200 million but after April 2020, there is an increasing trade deficit.</p></li>
 <li><p>The large dip seen in April 2020 is due to the <a href="https://www.straitstimes.com/asia/se-asia/coronavirus-malaysias-movement-curbs-extended-to-april-14">restriction on movement</a> in Malaysia as a measure to curb the spread of Covid-19.</p></li>
 </ul>
 <p>Soon after, the trade picks up as <a href="https://www.channelnewsasia.com/news/asia/covid-19-malaysia-reopen-almost-all-economic-sectors-may-4-12693816">Malaysia opens its economy</a>.</p></li>
-<li><p><em>Taiwan</em></p>
+<li><p><strong>Taiwan</strong></p>
 <ul>
 <li><p>Taiwan is a net exporter</p></li>
 <li><p>The trade deficit had reduced slight in December 2019, however it has deepened since.</p></li>
 <li><p>The dip in December 2019 was likely due to the <a href="https://www.reuters.com/article/taiwan-economy-orders-idUSL3N27Z1OP">uncertainty shrouded by the US-China trade war &amp; weakened commodity prices</a></p></li>
 </ul></li>
-<li><p><em>United States of America</em></p>
+<li><p><strong>United States of America</strong></p>
 <ul>
-<li></li>
+<li><p>Trade with the US has mostly in a deficit</p></li>
+<li><p>The Covid-19 pandemic turned that trend in March 2020 as <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States#March_to_April_2020">US battled the pandemic</a>.</p></li>
+<li><p>In addition to that, <a href="https://research.stlouisfed.org/publications/economic-synopses/2020/09/16/the-dynamics-of-the-u-s-trade-deficit-during-covid-19-the-role-of-essential-medical-goods">USA’s reliance on medical and pharmaceutical good</a> also boosted <a href="https://tradingeconomics.com/singapore/exports/united-states">Singapore’s exports</a>.</p></li>
+<li><p>In August 2020, Singapore’s exports boosted due to <a href="https://www.straitstimes.com/business/economy/spore-exports-up-77-in-aug-boosting-outlook-for-full-year">increase demand for non-electronic goods</a></p></li>
 </ul></li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
