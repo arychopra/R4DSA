@@ -19,4 +19,8 @@ body {
   background-size: auto;
 }
 
+.posts-list .post-preview img {
+  display: None;
+}
+
 </style>

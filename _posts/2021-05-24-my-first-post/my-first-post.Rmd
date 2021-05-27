@@ -553,16 +553,66 @@ Things to Note:
     
 ## 5. Final Visualization
 
-Link to Tableau Public
+The final chart can be found here:
 
-The final visualization is as follows:
+[Tableau Public Link](https://public.tableau.com/profile/aryah.umralkar.chopra#!/)
+
+It is as follows:
 
    ```{r,fig.cap='Final Visualization'}
    knitr::include_graphics(path='images/Picture_5-1.png')
    ```
+   
 ## 6. Insights
 
-1. Hong Kong is a Net Importer
-We can see that. The Balance of Trade has large positive values
+1. *China*
+
+   * We can see that during the period of January & February (both 2019 and 2020) trade falls sharply. This can be likely due to Chinese New Year celebrations during which many of the businesses are closed in China and Singapore. 
+   
+   * While the dip in Singapore's imports can be observed in both 2019 and 2020, Singapore's exports dipped in February 2020 and not February 2019.
+   
+   This could be partly due to the lockdown in Wuhan, China brought on by the [Covid-19 pandemic.](https://www.channelnewsasia.com/news/business/singapore-exports-trade-nodx-2019-economy-covid-19-12440760). The lockdown was imposed on 23rd of January 2020. 
+   
+   * There is a spike later in August 2020 which can be likely due to the recovering economy in China and [increased demand for non-oil domestic exports(Nodx)](https://www.straitstimes.com/business/economy/spore-exports-up-77-in-aug-boosting-outlook-for-full-year)
+   
+
+2. *Hong Kong *
+
+   * Hong Kong is a net importer
+   
+   * The trade surplus with Hong Kong increased from 2019 to 2020
+   
+   * In 2019, Singapore's imports increase from the period of February to April however, in 2020, the peak was much lower. This would be possibly due to the Pandemic with both countries seeing an uptick 
+   
+   * While in the previous year, exports increase from March to May, in 2020, the exports took a sharp dive. This is due to the [circuit breaker in Singapore](https://www.straitstimes.com/singapore/coronavirus-empty-trains-and-quiet-streets-as-singapore-enters-day-1-of-circuit-breaker).
+
+3. *Japan*
+
+   * While the Balance of Trade suggests a general deficit, Singapore exported more from April to September 2020. This could likely be due to the [pandemic](https://www.marketwatch.com/story/japans-exports-fell-more-than-expected-in-march-2020-04-19).
+   
+   With China's shutdown in response to the pandemic, [Japan's economy took a hit](https://www.japantimes.co.jp/news/2020/03/18/business/economy-business/japans-exports-fall-imports-china-slump-coronavirus-impact-widens/). 
+   
+4. *Malaysia*
+   
+   * The Balance of Trade is approximately around 200 million but after April 2020, there is an increasing trade deficit. 
+   
+   * The large dip seen in April 2020 is due to the [restriction on movement](https://www.straitstimes.com/asia/se-asia/coronavirus-malaysias-movement-curbs-extended-to-april-14) in Malaysia as a measure to curb the spread of Covid-19. 
+   
+   Soon after, the trade picks up as [Malaysia opens its economy](https://www.channelnewsasia.com/news/asia/covid-19-malaysia-reopen-almost-all-economic-sectors-may-4-12693816).
+   
+5. *Taiwan*
+
+   * Taiwan is a net exporter
+
+   * The trade deficit had reduced slight in December 2019, however it has deepened since. 
+   
+   * The dip in December 2019 was likely due to the [uncertainty shrouded by the US-China trade war & weakened commodity prices](https://www.reuters.com/article/taiwan-economy-orders-idUSL3N27Z1OP)
+   
+6. *United States of America*
+
+   *
+
+   
+   
 
 
