@@ -37,7 +37,7 @@ html {
 /*-- ARTICLE METADATA --*/
 d-byline {
   --heading-size:    0.9rem;
-  --heading-color:   rgba(0, 0, 0, 0.5);
+  --heading-color:   rgba(0, 0, 0, 0.8);
   --body-size:       1rem;
   --body-color:      rgba(0, 0, 0, 0.8);
 }
@@ -105,7 +105,7 @@ ul > li::marker {
 
 .nav-search{
   font-size: 12px;
-  color: rgb(249, 83, 85,);
+  color: rgb(249, 83, 85);
   font-weight: bold;
 
 }
@@ -152,9 +152,14 @@ d-title {
 	}
 	
 d-title p{
-  background-color: rgba(255, 255, 255, 0.90)   /* 35% opaque white */;
+  background-color: rgba(255, 255, 255, 0.90);   /* 35% opaque white */
+  line-height: 1.75em;
+  text-align: center;
 }
 
 d-title h1{
-  background-color: rgba(255, 255, 255, 0.90)   /* 35% opaque white */;
+  background-color: rgba(255, 255, 255, 0.90);   /* 35% opaque white */
+  line-height: 1.75em;
+  text-align: center;
 }
+

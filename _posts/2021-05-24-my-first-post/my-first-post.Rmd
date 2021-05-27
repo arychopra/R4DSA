@@ -5,6 +5,8 @@ description: |
 author:
   - name: Aryah U. Chopra
     url: https://arychopra.netlify.app/
+    affiliation: School of Computing and Information Systems, Singapore Management University
+    DOI: None
 date: 05-24-2021
 output:
   distill::distill_article:
