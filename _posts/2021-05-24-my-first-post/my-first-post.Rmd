@@ -484,7 +484,7 @@ The final chart can be found here:
 
 It is as follows:
 
-```{r,fig.cap='Final Visualization'}
+```{r,fig.cap='Final Visualization',out.width=700}
 knitr::include_graphics(path='images/Picture_5-1.png')
 ```
    
