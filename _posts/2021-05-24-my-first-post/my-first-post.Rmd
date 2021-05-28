@@ -4,7 +4,7 @@ description: |
   A Visualisation of Singapore's Merchandise Trade Volume with it's Top 6 Countries
 author:
   - name: Aryah U. Chopra
-    url: https://arychopra.netlify.app/
+    url: https://www.linkedin.com/in/aryahuc/
     affiliation: School of Computing and Information Systems, Singapore Management University
     DOI: None
 date: 05-24-2021
@@ -168,9 +168,10 @@ It contains 2 sheets:
  
 The figure below shows a snapshot of the data: 
 
-   ```{r, fig.cap= "Snapshot of the raw data"}
-   knitr::include_graphics(path='images/Picture_4-1.png')
-   ```
+```{r, fig.cap= "Snapshot of the raw data", out.extra='style="margin-left: 25px;"', out.width= 400}
+knitr::include_graphics(path='images/Picture_4-1.png')
+```
+
 Things to Note:
 
  * Data starts at Row 6
@@ -363,25 +364,25 @@ Things to Note:
    knitr::include_graphics(path='images/Picture_4-32.png')
    ```
    Once that is done, right click on the `Import Value` axis and select `Synchronize Axis`
-   ```{r,fig.cap='Synchronize axis'}
+   ```{r,fig.cap='Synchronize axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-33.png')
    ```
 5. Editing the X-axis
 
    Right click on the x-axis and select `Edit Axis`.
-   ```{r,fig.cap='Edit x-axis'}
+   ```{r,fig.cap='Edit x-axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-34.png')
    ```
    Next we make the changes shown below:
-   ```{r,fig.cap='General axis settings'}
+   ```{r,fig.cap='General axis settings',out.width=250}
    knitr::include_graphics(path='images/Picture_4-35.png')
    ```
-   ```{r,fig.cap='Tick marks axis settings'}
+   ```{r,fig.cap='Tick marks axis settings',out.width=250}
    knitr::include_graphics(path='images/Picture_4-36.png')
    ```
    Once the changes have been made, close the window.<br> 
    Right click on the axis again and select `Format...`
-   ```{r,fig.cap='Formating x-axis'}
+   ```{r,fig.cap='Formating x-axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-37.png')
    ```
    Make the following changes:
@@ -392,12 +393,12 @@ Things to Note:
 
    Size of Line Chart:<br>
    Select the `All` tab under the Mark card. Click the `Size` icon and toggle the sliding bar.
-   ```{r,fig.cap='Changing size of line chart'}
+   ```{r,fig.cap='Changing size of line chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-39.png')
    ```
    Type of Line Chart:<br>
    Under the `All` tab select `Color` and click on the line icon. This will show the data points.
-   ```{r,fig.cap='Adding points to line chart'}
+   ```{r,fig.cap='Adding points to line chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-40.png')
    ```
    Hide Column Label:<br>
@@ -420,23 +421,24 @@ Things to Note:
    knitr::include_graphics(path='images/Picture_4-44.png')
    ```
    Next, we will click on the lower y-axis (red chart) and select `Dual Axis`. 
-   ```{r,fig.cap=''}
+   ```{r,fig.cap='Select Dual Axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-45.png')
    ```
    Synchronize the axis
-   ```{r,fig.cap=''}
+   ```{r,fig.cap='Synchonize Axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-46.png')
    ```
-   Now, we will change the one of the chart into a bar chart. Under the Marks card, select `SUM(Export-Import)(2)`(any of them would be fine) and select from the drop down, `Bar`.
+   Now, we will change the one of the chart into a bar chart. Under the Marks card, select `SUM(Export-Import)(2)` (any of them would be fine) and select from the drop down, `Bar`.
    
-   ```{r,fig.cap='Changing to bar chart'}
+   ```{r,fig.cap='Change to bar chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-47.png')
    ```
    Once that is done, drag the `Export-Import` variable into the Color box and reduce the opacity.
-   ```{r,fig.cap='Adding color gradient to bar chart'}
+   
+   ```{r,fig.cap='Adding color gradient to bar chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-48.png')
    ```
-   ```{r,fig.cap='Changing opacity'}
+   ```{r,fig.cap='Changing opacity',out.width=200}
    knitr::include_graphics(path='images/Picture_4-49.png')
    ```
 8. Edit the legend
@@ -455,10 +457,10 @@ Things to Note:
    knitr::include_graphics(path='images/Picture_4-51.png')
    ```
    Make the following changes to get only vertical lines and not horizontal
-   ```{r, out.width=200,out.height=400,fig.cap='Column settings'}
+   ```{r, fig.cap='Column settings',out.width=200}
    knitr::include_graphics(path='images/Picture_4-52.png')
    ```
-   ```{r, out.width=200,out.height=400,fig.cap='Row settings'}
+   ```{r, fig.cap='Row settings',out.width=200}
    knitr::include_graphics(path='images/Picture_4-53.png')
    ```
 10. Annotations will be made in the chart.
@@ -480,11 +482,11 @@ The final chart can be found here:
 
 [Tableau Public Link](https://public.tableau.com/profile/aryah.umralkar.chopra#!/)
 
-   It is as follows:
+It is as follows:
 
-   ```{r,fig.cap='Final Visualization'}
-   knitr::include_graphics(path='images/Picture_5-1.png')
-   ```
+```{r,fig.cap='Final Visualization'}
+knitr::include_graphics(path='images/Picture_5-1.png')
+```
    
 ## 6. Insights
 
