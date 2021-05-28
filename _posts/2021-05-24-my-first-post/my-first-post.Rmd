@@ -33,7 +33,7 @@ They are identified as:
 5. Taiwan
 6. United States of America
 
-This period of time is especially crucial (and interesting) as it is one of the most tumultuous times the world has faced, with nearly all sectors taking a massive hit -- *The COVID-19 Pandemic*.
+This period of time is especially crucial (and interesting) as it is one of the most tumultuous times the world has faced, with nearly all sectors taking a massive hit -- **The COVID-19 Pandemic**.
 
 The data was retrieved from the [Department of Statistics, Singapore (DOS)](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data).
 
@@ -49,7 +49,7 @@ This visualization will be critiqued on two parameters: Clarity and Aesthetics.
 
 ### 2.1: Critique: Clarity
 
-Clarity, as the word suggests, is how clear/lucid the chart is when  it's message to the reader, free of ambiguity and confusion. 
+Clarity is how clear/lucid the chart in it's message to the reader. The information should be free of ambiguity and confusion. 
 
 The chart falters as such:
 
@@ -60,13 +60,13 @@ The chart falters as such:
   
    Example:
    ```{r,fig.cap = 'Misleading Title'}
-   knitr::include_graphics('images/Picture1-1.png')
+   knitr::include_graphics('images/Picture1-2.png')
    ```
 2. Mismatch of Axis: The x-axis is labeled as 'Month of Period', however, the ticks are labeled by the year.
 
    Example: 
    ```{r, fig.cap = 'Misleading x-axis'}
-   knitr::include_graphics('images/Picture1-2.png')
+   knitr::include_graphics('images/Picture1-1.png')
    ```
 3. Mismatched Dual-Axis: The import and export y-axis scales are not synchronized, as a result it creates ambiguity.
 
@@ -87,6 +87,8 @@ The chart falters as such:
 4. Since the countries are all on separate and unsynchronized axis, it is hard to make comparison between them. 
 
    For example, if one were to study the chart carefully, we can see that there is a huge trade surplus with Hong Kong as compared to other countries. 
+   
+   In addition to that, there is we're unable to see which country trades with Singapore the most. 
 
 5. There is no mention of the source of data. This makes it unclear to the user as to whether the chart comes from a reliable data source or not. 
 
@@ -235,7 +237,7 @@ Things to Note:
    
    <u>Formatting:</u>
 
-   Select the `Abc` icon (which indicated string format) on the top left hand corner of the date column as shown in Box     
+   Select the `Abc` icon (which indicates string format) on the top left hand corner of the date column as shown in Box.<br>     
    Right click and select `Date`.
    This will change the format of the column.
    ```{r, fig.cap='Changing Date Format'}
@@ -275,11 +277,10 @@ Things to Note:
    ```{r, fig.cap='Commit the Changes'}
    knitr::include_graphics(path='images/Picture_4-19.png')
    ```
+   ```{r, fig.cap='Exporting the Data'}
+   knitr::include_graphics(path='images/Picture_4-20.png')
+   ```
 10. Repeat the steps above for T2 and export the data as `Export_Data.csv`
-
-    ```{r, fig.cap='Save the Data'}
-    knitr::include_graphics(path='images/Picture_4-20.png')
-    ```
 
 11. Open a new session of Tableau and drag the newly created Import_Data.csv.<br>
     Export_Data.csv will also appear.
@@ -288,7 +289,7 @@ Things to Note:
     ```{r,fig.cap='Drag Import_Data'}
     knitr::include_graphics(path='images/Picture_4-21.png')
     ```
-    If the Export_Data.csv file does not appear, go to `Connections` and click `Add` as shown below:
+    If the `Export_Data.csv` file does not appear, go to `Connections` and click `Add` as shown below:
     ```{r,fig.cap='Adding Export_Data.csv'}
     knitr::include_graphics(path='images/Picture_4-22.png')
     ```
@@ -325,7 +326,8 @@ Things to Note:
 
     As the `Export Value` and `Import Values` are in thousands, we will scale it up by a factor of 1000 so that the raw values are reflected on the visualization. 
 
-    Right click on th `Export Value (Thousands)` column and select 'Create Calculated Field..`. Next, we add the formulat and label the calculation as `Export Value`. The process is shown below:
+    Right click on th `Export Value (Thousands)` column and select `Create Calculated Field...` <br>
+    Next, we add the formula and label the calculation as `Export Value`. The process is shown below:
     
     ```{r,fig.cap='Create calculated field: Scale up by thousand'}
     knitr::include_graphics(path='images/Picture_4-28.png')
@@ -343,7 +345,6 @@ Things to Note:
     ```{r,fig.cap='Formula'}
     knitr::include_graphics(path='images/Picture_4-29B.png')
     ```
-
 ### 4.3 Creating the Chart
 1. On the bottom left hand corner of window, click on the `Sheet` tab. This is where the chart is built.
 
@@ -392,7 +393,7 @@ Things to Note:
 6. Changing the Chart Features
 
    Size of Line Chart:<br>
-   Select the `All` tab under the Mark card. Click the `Size` icon and toggle the sliding bar.
+   Select the `All` tab under the Marks card. Click the `Size` icon and toggle the sliding bar.
    ```{r,fig.cap='Changing size of line chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-39.png')
    ```
@@ -403,7 +404,7 @@ Things to Note:
    ```
    Hide Column Label:<br>
    We can hide the column labels as it the Country names are self explanatory
-   Right click and select `Hide Field Labels for Column`
+   Right click and select `Hide Field Labels for Column`.
    ```{r,fig.cap='Hide field label'}
    knitr::include_graphics(path='images/Picture_4-41.png')
    ```
@@ -428,7 +429,7 @@ Things to Note:
    ```{r,fig.cap='Synchonize Axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-46.png')
    ```
-   Now, we will change the one of the chart into a bar chart. Under the Marks card, select `SUM(Export-Import)(2)` (any of them would be fine) and select from the drop down, `Bar`.
+   Now, we will change the one of the chart into a bar chart. Under the Marks card, select `SUM(Export-Import)(2)` (either of them would be fine) and select from the drop down, `Bar`.
    
    ```{r,fig.cap='Change to bar chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-47.png')
@@ -496,7 +497,7 @@ knitr::include_graphics(path='images/Picture_5-1.png')
    
    * While the dip in Singapore's imports can be observed in both 2019 and 2020, Singapore's exports dipped in February 2020 and not February 2019.
    
-   This could be partly due to the lockdown in Wuhan, China brought on by the [Covid-19 pandemic.](https://www.channelnewsasia.com/news/business/singapore-exports-trade-nodx-2019-economy-covid-19-12440760). The lockdown was imposed on 23rd of January 2020. 
+   This could be partly due to the lockdown in Wuhan, China brought on by the [Covid-19 pandemic](https://www.channelnewsasia.com/news/business/singapore-exports-trade-nodx-2019-economy-covid-19-12440760). The lockdown was imposed on 23rd of January 2020. 
    
    * There is a spike later in August 2020 which can be likely due to the recovering economy in China and [increased demand for non-oil domestic exports(Nodx)](https://www.straitstimes.com/business/economy/spore-exports-up-77-in-aug-boosting-outlook-for-full-year)
    

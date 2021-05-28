@@ -1508,7 +1508,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>Taiwan</li>
 <li>United States of America</li>
 </ol>
-<p>This period of time is especially crucial (and interesting) as it is one of the most tumultuous times the world has faced, with nearly all sectors taking a massive hit – <em>The COVID-19 Pandemic</em>.</p>
+<p>This period of time is especially crucial (and interesting) as it is one of the most tumultuous times the world has faced, with nearly all sectors taking a massive hit – <strong>The COVID-19 Pandemic</strong>.</p>
 <p>The data was retrieved from the <a href="https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data">Department of Statistics, Singapore (DOS)</a>.</p>
 <h2 id="original-data-visualization">2: Original Data Visualization</h2>
 <p>The following is the original chart that was prepared:</p>
@@ -1522,7 +1522,7 @@ Figure 1: Original Chart
 </div>
 <p>This visualization will be critiqued on two parameters: Clarity and Aesthetics.</p>
 <h3 id="critique-clarity">2.1: Critique: Clarity</h3>
-<p>Clarity, as the word suggests, is how clear/lucid the chart is when it’s message to the reader, free of ambiguity and confusion.</p>
+<p>Clarity is how clear/lucid the chart in it’s message to the reader. The information should be free of ambiguity and confusion.</p>
 <p>The chart falters as such:</p>
 <ol type="1">
 <li><p>Title: The title of the graph says “2019 - 2020”. This creates a level of ambiguity as we’re not sure as to if it is from Jan 2019 - Dec 2020 or Jan 2019 - Jan 2020 and so forth.</p>
@@ -1530,7 +1530,7 @@ Figure 1: Original Chart
 <p>Example:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-2"></span>
-<img src="images/Picture1-1.png" alt="Misleading Title" width="554" />
+<img src="images/Picture1-2.png" alt="Misleading Title" width="554" />
 <p class="caption">
 Figure 2: Misleading Title
 </p>
@@ -1540,7 +1540,7 @@ Figure 2: Misleading Title
 <p>Example:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-3"></span>
-<img src="images/Picture1-2.png" alt="Misleading x-axis" width="554" />
+<img src="images/Picture1-1.png" alt="Misleading x-axis" width="554" />
 <p class="caption">
 Figure 3: Misleading x-axis
 </p>
@@ -1562,7 +1562,8 @@ Figure 4: Mismatched Dual Axis
 <p><u>In the case of Taiwan:</u></p>
 <p>There is the illusion that exports and imports are comparable. However, Taiwan is a net exporter of Singapore and that information is not visible at the first glance.</p></li>
 <li><p>Since the countries are all on separate and unsynchronized axis, it is hard to make comparison between them.</p>
-<p>For example, if one were to study the chart carefully, we can see that there is a huge trade surplus with Hong Kong as compared to other countries.</p></li>
+<p>For example, if one were to study the chart carefully, we can see that there is a huge trade surplus with Hong Kong as compared to other countries.</p>
+<p>In addition to that, there is we’re unable to see which country trades with Singapore the most.</p></li>
 <li><p>There is no mention of the source of data. This makes it unclear to the user as to whether the chart comes from a reliable data source or not.</p></li>
 <li><p>The chart fails to indicate that the values indicated on the charts are in fact in billions or the currency it is in. The raw data is actually scaled down by a thousand.</p></li>
 </ol>
@@ -1753,7 +1754,7 @@ Figure 20: Output of Pivotted Table
 </div></li>
 <li><p>Formatting &amp; Renaming the columns.</p>
 <p><u>Formatting:</u></p>
-<p>Select the <code>Abc</code> icon (which indicated string format) on the top left hand corner of the date column as shown in Box<br />
+<p>Select the <code>Abc</code> icon (which indicates string format) on the top left hand corner of the date column as shown in Box.<br><br />
 Right click and select <code>Date</code>. This will change the format of the column.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-21"></span>
@@ -1826,16 +1827,16 @@ Figure 27: Selecting 2019 &amp; 2020
 Figure 28: Commit the Changes
 </p>
 </div>
-</div></li>
-<li><p>Repeat the steps above for T2 and export the data as <code>Export_Data.csv</code></p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-29"></span>
-<img src="images/Picture_4-20.png" alt="Save the Data" width="198" />
+<img src="images/Picture_4-20.png" alt="Exporting the Data" width="198" />
 <p class="caption">
-Figure 29: Save the Data
+Figure 29: Exporting the Data
 </p>
 </div>
 </div></li>
+<li><p>Repeat the steps above for T2 and export the data as <code>Export_Data.csv</code></p></li>
 <li><p>Open a new session of Tableau and drag the newly created Import_Data.csv.<br> Export_Data.csv will also appear.</p>
 <p>Drag the Import_Data.csv node into the workspace as shown.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1846,7 +1847,7 @@ Figure 30: Drag Import_Data
 </p>
 </div>
 </div>
-<p>If the Export_Data.csv file does not appear, go to <code>Connections</code> and click <code>Add</code> as shown below:</p>
+<p>If the <code>Export_Data.csv</code> file does not appear, go to <code>Connections</code> and click <code>Add</code> as shown below:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-31"></span>
 <img src="images/Picture_4-22.png" alt="Adding Export_Data.csv" width="240" />
@@ -1903,7 +1904,7 @@ Figure 36: Type in the Country names
 </div></li>
 <li><p>Create calculated fields</p>
 <p>As the <code>Export Value</code> and <code>Import Values</code> are in thousands, we will scale it up by a factor of 1000 so that the raw values are reflected on the visualization.</p>
-<p>Right click on th <code>Export Value (Thousands)</code> column and select ’Create Calculated Field..<code>. Next, we add the formulat and label the calculation as</code>Export Value`. The process is shown below:</p>
+<p>Right click on th <code>Export Value (Thousands)</code> column and select <code>Create Calculated Field...</code> <br> Next, we add the formula and label the calculation as <code>Export Value</code>. The process is shown below:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-37"></span>
 <img src="images/Picture_4-28.png" alt="Create calculated field: Scale up by thousand" width="208" />
@@ -2025,7 +2026,7 @@ Figure 49: Changes to x-axis format
 </div>
 </div></li>
 <li><p>Changing the Chart Features</p>
-<p>Size of Line Chart:<br> Select the <code>All</code> tab under the Mark card. Click the <code>Size</code> icon and toggle the sliding bar.</p>
+<p>Size of Line Chart:<br> Select the <code>All</code> tab under the Marks card. Click the <code>Size</code> icon and toggle the sliding bar.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-50"></span>
 <img src="images/Picture_4-39.png" alt="Changing size of line chart" width="200" />
@@ -2043,7 +2044,7 @@ Figure 51: Adding points to line chart
 </p>
 </div>
 </div>
-<p>Hide Column Label:<br> We can hide the column labels as it the Country names are self explanatory Right click and select <code>Hide Field Labels for Column</code></p>
+<p>Hide Column Label:<br> We can hide the column labels as it the Country names are self explanatory Right click and select <code>Hide Field Labels for Column</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-52"></span>
 <img src="images/Picture_4-41.png" alt="Hide field label" width="347" />
@@ -2096,7 +2097,7 @@ Figure 57: Synchonize Axis
 </p>
 </div>
 </div>
-<p>Now, we will change the one of the chart into a bar chart. Under the Marks card, select <code>SUM(Export-Import)(2)</code> (any of them would be fine) and select from the drop down, <code>Bar</code>.</p>
+<p>Now, we will change the one of the chart into a bar chart. Under the Marks card, select <code>SUM(Export-Import)(2)</code> (either of them would be fine) and select from the drop down, <code>Bar</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-58"></span>
 <img src="images/Picture_4-47.png" alt="Change to bar chart" width="200" />
@@ -2193,7 +2194,7 @@ Figure 66: Final Visualization
 <li><p>We can see that during the period of January &amp; February (both 2019 and 2020) trade falls sharply. This can be likely due to Chinese New Year celebrations during which many of the businesses are closed in China and Singapore.</p></li>
 <li><p>While the dip in Singapore’s imports can be observed in both 2019 and 2020, Singapore’s exports dipped in February 2020 and not February 2019.</p></li>
 </ul>
-<p>This could be partly due to the lockdown in Wuhan, China brought on by the <a href="https://www.channelnewsasia.com/news/business/singapore-exports-trade-nodx-2019-economy-covid-19-12440760">Covid-19 pandemic.</a>. The lockdown was imposed on 23rd of January 2020.</p>
+<p>This could be partly due to the lockdown in Wuhan, China brought on by the <a href="https://www.channelnewsasia.com/news/business/singapore-exports-trade-nodx-2019-economy-covid-19-12440760">Covid-19 pandemic</a>. The lockdown was imposed on 23rd of January 2020.</p>
 <ul>
 <li>There is a spike later in August 2020 which can be likely due to the recovering economy in China and <a href="https://www.straitstimes.com/business/economy/spore-exports-up-77-in-aug-boosting-outlook-for-full-year">increased demand for non-oil domestic exports(Nodx)</a></li>
 </ul></li>

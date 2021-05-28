@@ -18,7 +18,7 @@ html {
   /*-- Main font sizes --*/
   --title-size:      36px;
   --body-size:       16px;                     /* edited */
-  --code-size:       16px;                     /* edited */
+  --code-size:       14px;                     /* edited */
   --aside-size:      16px;
   --fig-cap-size:    12px;
   /*-- Main font colors --*/
@@ -91,7 +91,7 @@ d-article p code {
 }
 
 d-article a {
-    border-bottom: 2px solid rgba(249, 83, 85, 0.4);
+    border-bottom: 2.5px solid rgba(249, 83, 85, 0.4);
     text-decoration: none;
 }
 
@@ -156,13 +156,13 @@ d-title {
 	}
 	
 d-title p{
-  background-color: rgba(255, 255, 255, 0.90);   /* 35% opaque white */
+  background-color: rgba(255, 255, 255, 0.90);   
   line-height: 1.75em;
   text-align: center;
 }
 
 d-title h1{
-  background-color: rgba(255, 255, 255, 0.90);   /* 35% opaque white */
+  background-color: rgba(255, 255, 255, 0.90);  
   line-height: 1.75em;
   text-align: center;
 }
