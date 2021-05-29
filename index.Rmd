@@ -14,7 +14,7 @@ listing: posts
 }
 
 body {
-  background-image:	url('/D:/arychopra/R4DSA/Background_WelcomePage.png');
+  background-image:	url('/Background_WelcomePage.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
