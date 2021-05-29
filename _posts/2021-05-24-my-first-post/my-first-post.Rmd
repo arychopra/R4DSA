@@ -22,9 +22,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 1: Introduction
 
-The data in hand is the Merchandise Trade volume of Singapore with it's top 6 trade partners in 2019 and 2020. 
+The data in this makeover is the Merchandise Trade volume of Singapore with it's top 6 trade partners in 2019 and 2020. 
 
-They are identified as:
+The top 6 trade partners of Singapore are identified as:
 
 1. China (Mainland)
 2. Hong Kong
@@ -53,10 +53,11 @@ Clarity is how clear/lucid the chart in it's message to the reader. The informat
 
 The chart falters as such:
 
-1. Title: The title of the graph says "2019 - 2020". This creates a level of ambiguity as we're not sure as to if it is from Jan 2019 - Dec 2020 or Jan 2019 - Jan 2020 and so forth. 
+1. Title: The title of the graph says "2019 - 2020". This creates a level of ambiguity as we're not sure as to if it is 2019 and 2020, or Jan 2019 - Jan 2020 or Jun 2019 - Jun 2020 (see Japan).
 
-   The x-axis adds to the ambiguity of the title.
-   For example, for the Japan panel, there is only 2020 whereas for the others, there is 2019 - 2021.
+   For example, for the Japan panel, there is only the tick 2020 whereas for the others, there is 2019, 2020 and 2021.
+   
+   We can deduce that is in both 2019 and 2020, based on majority of the panels, however, we are not able to confirm the start month.
   
    Example:
    ```{r,fig.cap = 'Misleading Title'}
@@ -76,9 +77,9 @@ The chart falters as such:
    ```
    <u>In the case of Hong Kong:</u>
    
-   There is the illusion that exports are only slightly higher than the import volume across any one time period, however that is not the case. In fact, the exports are much higher than the imports.
+   There is the illusion that exports are only higher than the import volume across several time periods, however that is not the case. In fact, the exports are much higher than the imports.
 
-   Also, Hong Kong is actually net importer of Singapore and that information is not visible on the graph. 
+   Also, Hong Kong is a net importer of Singapore and that information is not immediately visible on the graph. 
 
    <u>In the case of Taiwan:</u>
   
@@ -86,18 +87,17 @@ The chart falters as such:
 
 4. Since the countries are all on separate and unsynchronized axis, it is hard to make comparison between them. 
 
-   For example, if one were to study the chart carefully, we can see that there is a huge trade surplus with Hong Kong as compared to other countries. 
+   For example, if one were to study the chart carefully, we can see that there is a trade surplus with Hong Kong as compared to other countries that remained unchanged. This highlights a unique relationship between Hong Kong and Singapore. The same can be said of Taiwan.
    
    In addition to that, there is we're unable to see which country trades with Singapore the most. 
 
 5. There is no mention of the source of data. This makes it unclear to the user as to whether the chart comes from a reliable data source or not. 
 
-6. The chart fails to indicate that the values indicated on the charts are in fact in billions or the currency it is in. The raw data is actually scaled down by a thousand. 
-
+6. The chart fails to indicate that the values indicated on the charts are in fact in billions or the currency it is in. The raw data is actually scaled down by a thousand.
 
 ### 2.1: Critique: Aesthetics
 
-Aesthetics, as the word suggests, the visual appeal of the chart.
+Aesthetics is the visual appeal of the graph. 
 
 The chart falters as such:
 
@@ -107,13 +107,13 @@ The chart falters as such:
    ```
 2. The compound line graph is perhaps not the correct visualization technique for this, and it is poorly executed as well.
 
-   The compound line graph is usually used so show the proportion of components that make up some aggregate variable. As such, the differences between the points across a certain time period would give actual values.
+   The compound line graph is commonly used to show the proportion of components that make up some aggregate variable. As such, the differences between the points across a certain time period would give actual values.
 
-   Due to the unsynchronized axis, the difference cannot be seen.
+   Due to the unsynchronized axis, the difference cannot be seen. As such, the purpose of using the compound line graph is defeated. 
 
    A line graph would be a better and cleaner visualization choice.
    
-3. The labels for each panel of the facet grid is larger than the title. And the font type is also not standardized across the chart.
+3. The labels for each panel of the facet grid is larger than the title. In addition to that, the font type is also not standardized across the chart.
    ```{r, fig.cap = 'Unchecked font sizes'}
    knitr::include_graphics('images/Picture1-5.png')
    ```
@@ -134,28 +134,28 @@ knitr::include_graphics(path = 'images/Picture_3-1.png')
 ```
 <u>Issues Addressed</u>
 
-1. Clarity - Point 1
+1. Clarity - Point 1<br>
 The title will be concise, implying year 2019 *and* 2020. In addition to that, it will state that the import and export terms are relative to Singapore. 
 
-2. Clarity - Point 2
+2. Clarity - Point 2<br>
 X-axis will be marked according to Month, with only the major ticks labeled. This will remove ambiguity from the previous design and also not crowd the axis too much.
 
-3. Clarity - Point 3 & Point 4
+3. Clarity - Point 3 & Point 4<br>
 The dual axis will by synchronized and shared between countries so that directly comparison can be made between countries as well as within their respective imports and exports.
 
-4. Clarity - Point 5
+4. Clarity - Point 5<br>
 The source of the data will included at the bottom of the chart. This will not only highlight that the data is from a reliable source, but also highlight that the import and export is relative to Singapore. 
 
-5. Clarity - Point 6
+5. Clarity - Point 6<br>
 For the Import and Export values, the raw value in billions will be reflected and the currency will also be stated as (SGD).
 
-6. Aesthetics - Point 1 & Point 2
+6. Aesthetics - Point 1 & Point 2<br>
 A line chart will be used so that the movements of the graph are clear. In addition to that, another chart will be created, Export - Import, to see the difference in values which perhaps the earlier visualization tried to show using a compound line chart.
 
-7. Aesthetics - Point 3 
+7. Aesthetics - Point 3<br> 
 The label of the title will be larger than that of the countries as well as the font type. 
 
-8. Aesthetics - Point 4 & Point 5
+8. Aesthetics - Point 4 & Point 5<br>
 The facet will be equally split into 6 panels, one for each country and the axis will be shared. This will ensure that they are of equal size. 
 
 ## 4. Building the Alternative Design
@@ -197,6 +197,8 @@ Things to Note:
    ```{r, fig.cap = "Data Interpreter"}
    knitr::include_graphics(path='images/Picture_4-4.png')
    ```
+   This `Data Interpreter` is able to identify the structure of the data and turn it into a proper format. The dates are however in columns, hence the interpreter will not be able to do anything and the dates will remain in string format until we change it(see Step 7)
+   
 4. Drag `T1` into the workspace. The data, highlighted in purple, will appear. 
    ```{r, fig.cap = "T1 Data Preview"}
    knitr::include_graphics(path='images/Picture_4-5.png')
@@ -206,7 +208,7 @@ Things to Note:
    Since, we only require the 6 countries, a filter will be applied. <br>
    The sequence steps are highlighted in the following:
    
-   Click on the `Add|Filter` button (Box 1) and then `Add..`(Box 2)
+   Click on the `Add|Filter` button and then `Add..`
    ```{r, fig.cap = 'Adding filter'}
    knitr::include_graphics(path='images/Picture_4-6.png')
    ```
@@ -293,9 +295,9 @@ Things to Note:
     ```{r,fig.cap='Adding Export_Data.csv'}
     knitr::include_graphics(path='images/Picture_4-22.png')
     ```
-13. Merge the files.
-    Now, we will merge the two .csv files on `Date` & `Country.`<br>
-    Double click on `Import_data.csv` in the workspace and then drag `Export_Data.csv` in.<br>
+13. Merge the files.<br>
+    Now, we will merge the two .csv files on `Date` & `Country.`
+    Double click on `Import_data.csv` in the workspace and then drag `Export_Data.csv` in.<br><br>
     Next, click on the Venn Diagram icon add `Date.`
     ```{r,fig.cap='Merging files'}
     knitr::include_graphics(path='images/Picture_4-23.png')
@@ -306,7 +308,7 @@ Things to Note:
     ```{r,fig.cap='Output of merge'}
     knitr::include_graphics(path='images/Picture_4-24.png')
     ```
-    We will also hide to two duplicate columns highlighted.<br>
+    Next, we hide the two duplicate columns highlighted above in purple.<br>
     Right click and select `Hide`
     ```{r,fig.cap='Hide un-needed columns'}
     knitr::include_graphics(path='images/Picture_4-25.png')
@@ -349,11 +351,13 @@ Things to Note:
 1. On the bottom left hand corner of window, click on the `Sheet` tab. This is where the chart is built.
 
 2. Drag and drop the variables (known as Measures in Tableau) into the are marked by `Columns` and `Rows` as shown below.
+
+   We want the country to be in the vertical panes, hence `Columns` and the export value on the horizontal panes, hence `Rows`.
    
    ```{r,fig.cap='Create chart'}
    knitr::include_graphics(path='images/Picture_4-30.png')
    ```
-3. Change year to month parameter by clicking on the square icon and selecting `Month`
+3. Change year to month parameter by clicking on the square icon and selecting `Month`. 
 
    ```{r,fig.cap='Change year to month'}
    knitr::include_graphics(path='images/Picture_4-31.png')
@@ -368,7 +372,7 @@ Things to Note:
    ```{r,fig.cap='Synchronize axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-33.png')
    ```
-   A dual and synchronized axis allows us to compare the import and export for each country. This is especially useful in understanding the trade relationship between Singapore and the partner. 
+   A dual and synchronized axis allows us to compare the import and export for each country. This is especially useful in understanding the trade relationship between Singapore and the Country of interest.  
    
 5. Editing the X-axis
 
@@ -377,32 +381,36 @@ Things to Note:
    knitr::include_graphics(path='images/Picture_4-34.png')
    ```
    Next we make the changes shown below:
+   
+   Here, we're setting the start and end points of the axis so that there is no amguity of 2021 being included as mark on the chart when we label the ticks.
    ```{r,fig.cap='General axis settings',out.width=250}
    knitr::include_graphics(path='images/Picture_4-35.png')
    ```
+   We will set the major ticks at 6 months, and the minor ticks will not be labeled however, they will be shown on the chart. <br> This is done so that the data-ink ratio is not compromised. The information that the axis goes by month is evident and yet, unnecessary labeling and crowding of the axis is avoided. 
    ```{r,fig.cap='Tick marks axis settings',out.width=250}
    knitr::include_graphics(path='images/Picture_4-36.png')
    ```
-   Once the changes have been made, close the window.<br> 
-   Right click on the axis again and select `Format...`
+   Once the changes have been made, close the window.<br>
+   
+   Right click on the axis again and select `Format...`. 
    ```{r,fig.cap='Formating x-axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-37.png')
    ```
+   We will use abbreviations for the Month-Year labels, and orient them vertically. This does not clutter the axis.<br>
    Make the following changes:
    ```{r,fig.cap='Changes to x-axis format'}
    knitr::include_graphics(path='images/Picture_4-38.png')
-   
-   
    ```
 6. Changing the Chart Features
 
    Size of Line Chart:<br>
-   Select the `All` tab under the Marks card. Click the `Size` icon and toggle the sliding bar.
+   Select the `All` tab under the Marks card. Click the `Size` icon and toggle the sliding bar. We will increase the width of the line chart so that the data-ink ratio increases and there is not much white space. 
    ```{r,fig.cap='Changing size of line chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-39.png')
    ```
    Type of Line Chart:<br>
-   Under the `All` tab select `Color` and click on the line icon. This will show the data points.
+   Under the `All` tab select `Color` and click on the line icon. This will show the data points.<br>
+   This is done so that the months can be easily traced. 
    ```{r,fig.cap='Adding points to line chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-40.png')
    ```
@@ -417,10 +425,13 @@ Things to Note:
    ```{r,fig.cap='Editing title'}
    knitr::include_graphics(path='images/Picture_4-42.png')
    ```
-   ```{r,fig.cap='Title to Add'}
+   The title will clearly state that the country of reference is Singapore and the years in discussion are 2019 and 2020. 
+   
+   The title will also be centered as the country names are also centered. 
+   ```{r,fig.cap='Title to Add',out.width=200}
    knitr::include_graphics(path='images/Picture_4-43.png')
    ```
-7. Adding `Export-Import` 
+7. Adding `Export-Import`<br>
    Drag and drop `Export-Import` twice on to the `Rows` bar. 
    ```{r,fig.cap='Creating second chart'}
    knitr::include_graphics(path='images/Picture_4-44.png')
@@ -438,7 +449,7 @@ Things to Note:
    ```{r,fig.cap='Change to bar chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-47.png')
    ```
-   Once that is done, drag the `Export-Import` variable into the Color box and reduce the opacity.
+   Once that is done, drag the `Export-Import` variable into the Color box and reduce the opacity to approxmately 45%.
    
    ```{r,fig.cap='Adding color gradient to bar chart',out.width=200}
    knitr::include_graphics(path='images/Picture_4-48.png')
@@ -447,15 +458,17 @@ Things to Note:
    knitr::include_graphics(path='images/Picture_4-49.png')
    ```
 8. Edit the legend
-   With the newly created bar chart, we will change the color gradient so that it shows red for negative values and green for positive.
+   With the newly created bar chart, we will change t he color gradient so that it shows orange for negative values and purple for positive.
    
    The steps are shown below:
-   ```{r,fig.cap='Settings for color gradient'}
+   ```{r,fig.cap='Settings for color gradient',out.width=400}
    knitr::include_graphics(path='images/Picture_4-50.png')
    ```
    Once that is done, we change the color and width of the line chart of the `Export-Import` chart.
    
    The color of the line chart will follow the same color gradient as that of the bar chart, it will be created the same way as shown earlier, but this time dropping the measure onto the `Color` box in the line chart Marks card.
+   
+   To go with the rest of the color scheme, the color for the line charts will also be changed. This so that there is a theme to the colors are they go well together.The color palette was decided using a [color wheel](https://www.sessions.edu/color-calculator/) that calculates 4 colors that would be in tetradic harmony.
 
 9. Changing the grid lines.
 
@@ -470,13 +483,24 @@ Things to Note:
    ```{r, fig.cap='Row settings',out.width=200}
    knitr::include_graphics(path='images/Picture_4-53.png')
    ```
+   We do this in order to increase the data-ink ratio by reducing the unneccessary gridlines.
+   
 10. Annotations will be made in the chart.
 
     To do so, right click, select `Annotate` and `Point` to make the annotation. 
+        
+    ```{r, fig.cap='Row settings',out.width=200}
+    knitr::include_graphics(path='images/Picture_4-53A.png')
+    ```
     
-    For further formatting to change the annotation bubble shape, right click on the text box and select `Format` 
+    For further formatting to change the annotation bubble shape, right click on the text box and select `Format`:
     
-11. Lastly, caption will be added to refer to the data source.
+    ```{r, fig.cap='Row settings', out.width=310}
+    knitr::include_graphics(path='images/Picture_4-53B.png')
+    ```
+    We select minimal shading(50%), with no borders but with a slightly darker grey dotted line with a dot at the end, as we want to make clear which data point is being highlighted.
+    
+11. Add captions that refer back to the data source.
     
     Right click on the bar right below the x-axis and select Caption. 
     The caption box will appear and right click on that to make edits.
@@ -489,7 +513,7 @@ Things to Note:
     ```{r,fig.cap='Extending lines on the Chart'}
     knitr::include_graphics(path='images/Picture_4-55.png')
     ```
-    We will remove those: Right click on a whitespace on chart, and select `Format..`. Make the following changes:
+    We will remove those to increase the data-ink ratio: Right click on a whitespace on chart, and select `Format..`. Make the following changes:
     ```{r,fig.cap='Remove Row Header Line',out.width=200}
     knitr::include_graphics(path='images/Picture_4-56.png')
     ```
@@ -591,9 +615,9 @@ knitr::include_graphics(path='images/Picture_5-1.png')
 
    * Taiwan is a net exporter
 
-   * The trade deficit had reduced slight in December 2019, however it has deepened since. 
+   * The trade deficit had reduced slight in November-December 2019, however it has deepened since. 
    
-   * The dip in December 2019 was likely due to the [uncertainty shrouded by the US-China trade war & weakened commodity prices](https://www.reuters.com/article/taiwan-economy-orders-idUSL3N27Z1OP)
+   * The dip in Taiwan's exports to Singpapore in November - December 2019 was likely due to the [uncertainty shrouded by the US-China trade war & weakened commodity prices](https://www.reuters.com/article/taiwan-economy-orders-idUSL3N27Z1OP)
    
 6. **United States of America**
 
