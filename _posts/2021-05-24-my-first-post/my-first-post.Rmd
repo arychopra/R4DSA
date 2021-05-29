@@ -368,6 +368,8 @@ Things to Note:
    ```{r,fig.cap='Synchronize axis',out.width=200}
    knitr::include_graphics(path='images/Picture_4-33.png')
    ```
+   A dual and synchronized axis allows us to compare the import and export for each country. This is especially useful in understanding the trade relationship between Singapore and the partner. 
+   
 5. Editing the X-axis
 
    Right click on the x-axis and select `Edit Axis`.
@@ -389,6 +391,8 @@ Things to Note:
    Make the following changes:
    ```{r,fig.cap='Changes to x-axis format'}
    knitr::include_graphics(path='images/Picture_4-38.png')
+   
+   
    ```
 6. Changing the Chart Features
 
@@ -450,6 +454,8 @@ Things to Note:
    knitr::include_graphics(path='images/Picture_4-50.png')
    ```
    Once that is done, we change the color and width of the line chart of the `Export-Import` chart.
+   
+   The color of the line chart will follow the same color gradient as that of the bar chart, it will be created the same way as shown earlier, but this time dropping the measure onto the `Color` box in the line chart Marks card.
 
 9. Changing the grid lines.
 
@@ -477,6 +483,61 @@ Things to Note:
     ```{r,fig.cap='Adding caption'}
     knitr::include_graphics(path='images/Picture_4-54.png')
     ```
+    
+12. Currently, the chart has lines extending outward as showing in the line highlighted in red.
+    
+    ```{r,fig.cap='Extending lines on the Chart'}
+    knitr::include_graphics(path='images/Picture_4-55.png')
+    ```
+    We will remove those: Right click on a whitespace on chart, and select `Format..`. Make the following changes:
+    ```{r,fig.cap='Remove Row Header Line',out.width=200}
+    knitr::include_graphics(path='images/Picture_4-56.png')
+    ```
+    ```{r,fig.cap='Remove Column Header Line',out.width=200}
+    knitr::include_graphics(path='images/Picture_4-57.png')
+    ```
+13. The final changes will be splitting this chart into two separate charts.
+    At the bottom of the window, right click on the `Sheet 1` tab and select duplicate:
+    ```{r,fig.cap='Duplicate sheet',out.width=200}
+    knitr::include_graphics(path='images/Picture_4-58.png')
+    ```
+    Double click and rename the `Sheet 1` as `Import/Export` and the duplicated sheet as `Balance of Trade`.
+    ```{r,fig.cap='Renaming the sheet',out.width=200}
+    knitr::include_graphics(path='images/Picture_4-59.png')
+    ```
+14. Next, we will open the respective sheets and remove the other variables by right clicking and selecting remove.
+    ```{r,fig.cap='Remove variables',out.width=200}
+    knitr::include_graphics(path='images/Picture_4-60.png')
+    ```
+    
+    <u>Import/Export sheet</u>
+    We will retain the following:
+    
+    ```{r,fig.cap='Import/Export Sheet variables',out.width=335}
+    knitr::include_graphics(path='images/Picture_4-61.png')
+    ```
+    <u>Balance of Trade sheet</u>
+    We will retain the following:
+    
+    ```{r,fig.cap='Balance of Trade Sheet variables',out.width=335}
+    knitr::include_graphics(path='images/Picture_4-62.png')
+    ```    
+    In the `Balance of Trade` chart, add the title as shown below:
+    ```{r,fig.cap='Balance of Trade chart title',out.width=335}
+    knitr::include_graphics(path='images/Picture_4-63.png')
+    ```
+15. Create a dashboard by going to the bottom of the window and selecting `New Dashboard`
+    ```{r,fig.cap='Adding Dashboard',out.width=200}
+    knitr::include_graphics(path='images/Picture_4-64.png')
+    ```
+
+16. In the dashboard, drag and drop the sheets as shown below:
+    ```{r,fig.cap='Adding charts to Dashboard'}
+    knitr::include_graphics(path='images/Picture_4-66.png')
+    ```
+   Hover over the edges of the chart to resize.
+
+
 ## 5. Final Visualization
 
 The final chart can be found here:
