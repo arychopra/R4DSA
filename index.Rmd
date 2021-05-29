@@ -14,18 +14,14 @@ listing: posts
 }
 
 body {
-  background-image:	url('/Background_WelcomePage.png');
+  background-image:	url('/D:/arychopra/R4DSA/Background_WelcomePage.png');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 .posts-list .post-preview img {
   display: None;
 }
 
-body, html {
-  height: auto;
-  width: auto;
-}
 
 </style>
