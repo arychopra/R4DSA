@@ -14,7 +14,7 @@ listing: posts
 }
 
 body {
-  background-image:	url('/Background_WelcomePage.png');
+  background-image:	url('/Background_WelcomePage2.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

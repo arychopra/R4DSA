@@ -12,8 +12,8 @@
       "path": "index.html",
       "title": "R for Data Science and Analytics",
       "author": [],
-      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       16px;         \r\n  --text-color:       #FFFFFF;            \r\n  --text-size:        16px;                      \r\n  --hover-color:      rgb(135, 203, 61);         \r\n  --bkgd-color:       #455A64;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/Background_WelcomePage.png');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.posts-list .post-preview img {\r\n  display: None;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-29T22:46:26+08:00"
+      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       16px;         \r\n  --text-color:       #FFFFFF;            \r\n  --text-size:        16px;                      \r\n  --hover-color:      rgb(135, 203, 61);         \r\n  --bkgd-color:       #455A64;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/Background_WelcomePage2.png');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.posts-list .post-preview img {\r\n  display: None;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-05-30T17:45:43+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
