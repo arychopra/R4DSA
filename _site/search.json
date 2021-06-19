@@ -6,14 +6,14 @@
       "description": "<i>Graphical excellence is that which gives to the viewer the greatest number of ideas in the shortest time with the least ink in the smallest space.”<\/i><br> - Edward Tufte <br><br>",
       "author": [],
       "contents": "\r\nThis blog is created & updated as a part of the coursework of Visual Analytics and Applications, taught by Professor Kam Tin Seong at Singapore Management University.\r\nThe posts are critiques and re-design of visualizations.\r\nTo quote Professor Kam: The purpose of the makeover is to improve on the original visualization. Focus on what works, what doesn’t work, why those things don’t work, and how you made it better. You should try stick to the fields in the data set provided and improve upon the original visualization. However, if supplementing the data helps you tell a better story, go for it!\r\nAs of 27th May 2021, the first Data Viz Visualization has been posted. This is a re-design of the Merchandise Trade data of Singapore for 2019 & 2020.\r\nThe design of the blog was created with some graphics and CSS:\r\nImage attributes:\r\nIllustration by Freepik Storyset\r\nSlidesgo.com\r\nCSS Inspiration:\r\n Designed by Carpe Numidium\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-28T22:17:39+08:00"
+      "last_modified": "2021-06-06T15:58:06+08:00"
     },
     {
       "path": "index.html",
-      "title": "R for Data Science and Analytics",
+      "title": "Data Science & Analytics",
       "author": [],
-      "contents": "\r\n\r\n\r\n.distill-site-header {\r\n  --title-size:       16px;         \r\n  --text-color:       #FFFFFF;            \r\n  --text-size:        16px;                      \r\n  --hover-color:      rgb(135, 203, 61);         \r\n  --bkgd-color:       #455A64;                \r\n}\r\n\r\nbody {\r\n  background-image: url('/Background_WelcomePage2.png');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.posts-list .post-preview img {\r\n  display: None;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-30T17:45:43+08:00"
+      "contents": "\r\n\r\n@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pattaya&family=Sacramento&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Open+Sans&family=Pattaya&family=Sacramento&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');\r\n\r\n.distill-site-header {\r\n  --title-size:       16px;         \r\n  --text-color:       #000000;            \r\n  --text-size:        16px;                      \r\n  --hover-color:      rgb(135, 203, 61);         \r\n  --bkgd-color:       #FFFFFF;                \r\n}\r\n\r\nbody {\r\n  background-image: url('g/Background_WelcomePage2.png');\r\n  background-image: url('D:/arychopra/R4DSA/Background_WelcomePage2.png');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.posts-list .post-preview img {\r\n  display: None;\r\n}\r\n\r\nh2:hover {\r\n  color: rgb(135, 203, 61);\r\n}\r\n\r\n.posts-list .posts-list-caption {\r\n  font-family: 'Miniver', cursive;\r\n  font-weight: 200;\r\n  font-size: 54px;\r\n  /*font-variant: small-caps;*/\r\n  color: #000000;\r\n  margin-bottom: 20px;\r\n  line-height: 1;\r\n  margin-top:10px;\r\n}\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-06T16:51:42+08:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -7,6 +7,7 @@ description: "<i>Graphical excellence is that which gives to the viewer the grea
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
 This blog is created & updated as a part of the coursework of Visual Analytics and Applications, taught by [Professor Kam Tin Seong](https://www.smu.edu.sg/faculty/profile/9618/KAM-Tin-Seong) at Singapore Management University.
 
 The posts are critiques and re-design of visualizations.

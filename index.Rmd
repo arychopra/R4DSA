@@ -1,20 +1,26 @@
 ---
-title: "R for Data Science and Analytics"
+title: "Data Science & Analytics"
 site: distill::distill_website
 listing: posts
 ---
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pattaya&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Open+Sans&family=Pattaya&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
 .distill-site-header {
   --title-size:       16px;         
-  --text-color:       #FFFFFF;            
+  --text-color:       #000000;            
   --text-size:        16px;                      
   --hover-color:      rgb(135, 203, 61);         
-  --bkgd-color:       #455A64;                
+  --bkgd-color:       #FFFFFF;                
 }
 
 body {
-  background-image:	url('/Background_WelcomePage2.png');
+  background-image:	url('g/Background_WelcomePage2.png');
+  background-image:	url('D:/arychopra/R4DSA/Background_WelcomePage2.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,5 +29,20 @@ body {
   display: None;
 }
 
+h2:hover {
+  color: rgb(135, 203, 61);
+}
+
+.posts-list .posts-list-caption {
+  font-family: 'Miniver', cursive;
+  font-weight: 200;
+  font-size: 54px;
+  /*font-variant: small-caps;*/
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1;
+  margin-top:10px;
+}
 
 </style>
+

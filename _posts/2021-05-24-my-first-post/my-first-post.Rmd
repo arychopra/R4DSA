@@ -1,7 +1,7 @@
 ---
 title: "Data Viz Makeover 1"
 description: |
-  A Visualisation of Singapore's Merchandise Trade Volume with it's Top 6 Countries
+  A Visualisation of Singapore's Top 6 Trade Partners 2019 & 2020
 author:
   - name: Aryah U. Chopra
     url: https://www.linkedin.com/in/aryahuc/
