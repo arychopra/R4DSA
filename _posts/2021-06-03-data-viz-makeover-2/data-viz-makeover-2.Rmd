@@ -1,6 +1,7 @@
 ---
 title: "Data Viz Makeover 2"
-description: "A Closer Look at Singapore's Trade Partners"
+description: |
+  A Closer Look at Singapore's Trade Partners
 author:
   - name: Aryah U. Chopra
     url: https://www.linkedin.com/in/aryahuc/
