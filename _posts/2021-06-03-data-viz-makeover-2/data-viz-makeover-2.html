@@ -1547,7 +1547,9 @@ Figure 2: Chart quoting data out of context
 \text{Sizing of Japan&#39;s bubble} =\frac{2.18*0.5166}{2.18} = 1.05
 \]</span></p>
 <p>This is incorrect as linearly scaling the radius results in quadrupled area. <span class="math display">\[
-\text{Given that radius of the bigger circle = } r_{2} \\\text{, radius of smaller circle = } r_{1} \\
+\text{Given that radius of the bigger circle = } r_{2} \\
+\text{and, radius of smaller circle = } r_{1} \\
+\text{ }\\
 \text{ When the radius is linearly scaled i.e. } r_{2} = 2*r_{1}  \\
 \text{Ratios of the Circles = } \frac{\text{Bigger Circle}}{\text{Smaller Circle}} = \frac{\pi (2r_{1})^2}{\pi r_{1}} = 4 \\
 \]</span> Instead the areas of the circles should be scaled.</p>
@@ -1680,16 +1682,16 @@ Figure 10: Snapshot of the raw data
 <li><p>Load the Data.<br>First, drag and drop the data into the Home screen as shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-11"></span>
-<img src="images2/4-1-1.png" alt="Measures to Rows/Columns shelf" width="268" />
+<img src="images2/4-1-1.png" alt="Drag and drop the file" width="400" />
 <p class="caption">
-Figure 11: Measures to Rows/Columns shelf
+Figure 11: Drag and drop the file
 </p>
 </div>
 </div></li>
 <li><p>Once the data has loaded into the screen, select <code>Use Data Interpreter</code>. This will remove unnecessary rows and columns.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-12"></span>
-<img src="images2/4-1-2.png" alt="Data Interpreter" width="115" />
+<img src="images2/4-1-2.png" alt="Data Interpreter" width="200" />
 <p class="caption">
 Figure 12: Data Interpreter
 </p>
@@ -1698,7 +1700,7 @@ Figure 12: Data Interpreter
 <li><p>Drag and drop T1 into the workspace</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-13"></span>
-<img src="images2/4-1-3.png" alt="Drag and drop T1" width="232" />
+<img src="images2/4-1-3.png" alt="Drag and drop T1" width="400" />
 <p class="caption">
 Figure 13: Drag and drop T1
 </p>
@@ -1708,7 +1710,7 @@ Figure 13: Drag and drop T1
 <p>Right click on the <code>Import</code> node and select <code>Pivot</code> from the drop down.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-14"></span>
-<img src="images2/4-1-4.png" alt="Select Pivot" width="166" />
+<img src="images2/4-1-4.png" alt="Select Pivot" width="200" />
 <p class="caption">
 Figure 14: Select Pivot
 </p>
@@ -1725,7 +1727,7 @@ Figure 15: Pivot Node
 <p>Once that is done, select the first date <code>1976 Apr</code> + Shift + last date <code>2021 Mar</code>. Drag and drop into the <code>Pivoted Fields Section</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-16"></span>
-<img src="images2/4-1-6.png" alt="Pivoting the date columns into rows" width="296" />
+<img src="images2/4-1-6.png" alt="Pivoting the date columns into rows" width="400" />
 <p class="caption">
 Figure 16: Pivoting the date columns into rows
 </p>
@@ -1762,7 +1764,7 @@ Figure 19: Select the Data panel and then select Filter
 <p>Next, add the following formula:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-20"></span>
-<img src="images2/4-1-10.png" alt="Formula for Filter" width="277" />
+<img src="images2/4-1-10.png" alt="Formula for Filter" width="320" />
 <p class="caption">
 Figure 20: Formula for Filter
 </p>
@@ -1772,7 +1774,7 @@ Figure 20: Formula for Filter
 <p>Select the <code>Country</code> pane as we did above for dates, and add the following formula:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-21"></span>
-<img src="images2/4-1-11.png" alt="Filtering out continents" width="277" />
+<img src="images2/4-1-11.png" alt="Filtering out continents" width="320" />
 <p class="caption">
 Figure 21: Filtering out continents
 </p>
@@ -1828,7 +1830,7 @@ Figure 26: Connect Export node to data prep flow
 <p>Right click on Import’s final step: Clean step and select <code>Join</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-27"></span>
-<img src="images2/4-1-17.png" alt="Creating Join node" width="124" />
+<img src="images2/4-1-17.png" alt="Creating Join node" width="200" />
 <p class="caption">
 Figure 27: Creating Join node
 </p>
@@ -1837,7 +1839,7 @@ Figure 27: Creating Join node
 <p>The <code>Join</code> node will appear. Drag and drop the final step in the Export flow and drop it into the Union node as shown.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-28"></span>
-<img src="images2/4-1-18.png" alt="Connecting Export node to Join" width="192" />
+<img src="images2/4-1-18.png" alt="Connecting Export node to Join" width="300" />
 <p class="caption">
 Figure 28: Connecting Export node to Join
 </p>
@@ -1846,7 +1848,7 @@ Figure 28: Connecting Export node to Join
 <p>The workspace below will be prompted to add in the field for the join.<br> Add the following:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-29"></span>
-<img src="images2/4-1-19.png" alt="Selecting conditions for Join" width="256" />
+<img src="images2/4-1-19.png" alt="Selecting conditions for Join" width="300" />
 <p class="caption">
 Figure 29: Selecting conditions for Join
 </p>
@@ -1878,7 +1880,7 @@ Figure 31: Adding Balance of Trade and Total Volume
 <p>Right click and select <code>Exclude</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-32"></span>
-<img src="images2/4-1-22.png" alt="Excluding null values for BOT" width="181" />
+<img src="images2/4-1-22.png" alt="Excluding null values for BOT" width="200" />
 <p class="caption">
 Figure 32: Excluding null values for BOT
 </p>
@@ -1897,7 +1899,7 @@ Figure 33: Excluding null values for Total Volume
 <li><p>Right click on the <code>Final Clean</code> node and select <code>Preview in Tableau Desktop</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-34"></span>
-<img src="images2/4-1-24.png" alt="Exporting to Tableau Desktop" width="131" />
+<img src="images2/4-1-24.png" alt="Exporting to Tableau Desktop" width="200" />
 <p class="caption">
 Figure 34: Exporting to Tableau Desktop
 </p>
@@ -1910,7 +1912,7 @@ Figure 34: Exporting to Tableau Desktop
 <li><p>Right click on the <code>Country</code> variable in the <code>Data</code> pane and select <code>Aliases</code>. We will change the names so that they appear shorter in the labels/tooltips.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-35"></span>
-<img src="images2/4-2-1.png" alt="Adding aliases" width="194" />
+<img src="images2/4-2-1.png" alt="Adding aliases" width="200" />
 <p class="caption">
 Figure 35: Adding aliases
 </p>
@@ -1941,7 +1943,7 @@ Figure 37: Creating worksheets
 <li><p>Drag and drop the variables into the <code>Rows</code> and <code>Columns</code></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-38"></span>
-<img src="images2/4-2-4.png" alt="Measures for Overall Bar" width="339" />
+<img src="images2/4-2-4.png" alt="Measures for Overall Bar" width="300" />
 <p class="caption">
 Figure 38: Measures for Overall Bar
 </p>
@@ -1951,7 +1953,7 @@ Figure 38: Measures for Overall Bar
 <li><p>Under the <code>All</code> Marks card, change the chart type to Bar.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-39"></span>
-<img src="images2/4-2-5.png" alt="Change to Bar chart" width="130" />
+<img src="images2/4-2-5.png" alt="Change to Bar chart" width="200" />
 <p class="caption">
 Figure 39: Change to Bar chart
 </p>
@@ -1962,7 +1964,7 @@ Figure 39: Change to Bar chart
 <p>Right click on the <code>Import</code> y-axis and select <code>Edit Axis...</code></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-6"></span>
-<img src="images2/4-2-6.png" alt="Inverting Import Chart" width="170" />
+<img src="images2/4-2-6.png" alt="Inverting Import Chart" width="200" />
 <p class="caption">
 Figure 40: Inverting Import Chart
 </p>
@@ -1990,7 +1992,7 @@ Figure 42: Repeat for Export chart
 <p>Reference will be added at 2 points for both import and export: Minimum and Maximum. A third line will be added that will be shared between the two at 350 Billion. This is so that the reader knows the start point. <br><br> Right click on the <code>Export</code> y-axis and select <code>Add Reference Line</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-42"></span>
-<img src="images2/4-2-9.png" alt="Adding reference line" width="146" />
+<img src="images2/4-2-9.png" alt="Adding reference line" width="200" />
 <p class="caption">
 Figure 43: Adding reference line
 </p>
@@ -2027,7 +2029,7 @@ Figure 46: Configuring the aesthetics of reference line
 <p>Under <code>Numbers</code>, set the display a abbreviated numbers. <br> Set the number to 2 decimals.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-13"></span>
-<img src="images2/4-2-13.png" alt="Rounding up the numbers displayed" width="312" />
+<img src="images2/4-2-13.png" alt="Rounding up the numbers displayed" width="300" />
 <p class="caption">
 Figure 47: Rounding up the numbers displayed
 </p>
@@ -2036,7 +2038,7 @@ Figure 47: Rounding up the numbers displayed
 <p>Repeat the above for Maximum and also for the Imports chart.<br><br> The line will be <b>red</b> for <code>Imports</code>.<br><br> The chart at this point will look like so:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-46"></span>
-<img src="images2/4-2-14.png" alt="Intermediate Chart" width="296" />
+<img src="images2/4-2-14.png" alt="Intermediate Chart" width="323" />
 <p class="caption">
 Figure 48: Intermediate Chart
 </p>
@@ -2046,7 +2048,7 @@ Figure 48: Intermediate Chart
 <p>Set the colors of the bars:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-14A"></span>
-<img src="images2/4-2-14A.png" alt="Setting up the colors of the bar chart" width="148" />
+<img src="images2/4-2-14A.png" alt="Setting up the colors of the bar chart" width="200" />
 <p class="caption">
 Figure 49: Setting up the colors of the bar chart
 </p>
@@ -2055,7 +2057,7 @@ Figure 49: Setting up the colors of the bar chart
 <li><p>Hide the axis for both chart. Right click on the axis/measure in the <code>Rows</code> shelf and un-check <code>Show Header</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-15"></span>
-<img src="images2/4-2-15.png" alt="Hide axis" width="144" />
+<img src="images2/4-2-15.png" alt="Hide axis" width="200" />
 <p class="caption">
 Figure 50: Hide axis
 </p>
@@ -2064,16 +2066,16 @@ Figure 50: Hide axis
 <li><p>Hide the field labels i.e. column labels. Right click on the label and select <code>Hide Field Labels for Columns</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-45"></span>
-<img src="images2/4-2-45.png" alt="Hide Field labels" width="170" />
+<img src="images2/4-2-45.png" alt="Hide Field labels" width="270" />
 <p class="caption">
 Figure 51: Hide Field labels
 </p>
 </div>
 </div></li>
-<li><p>Edit the title. Right click on the chart and edit as show.</p>
+<li><p>Edit the title. Right click on the chart and edit as shown.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-47"></span>
-<img src="images2/4-2-16.png" alt="Editing the title" width="101" />
+<img src="images2/4-2-16.png" alt="Editing the title" width="200" />
 <p class="caption">
 Figure 52: Editing the title
 </p>
@@ -2082,7 +2084,7 @@ Figure 52: Editing the title
 <p>Edit the title as shown below. Bold and color the words Import and Export and this reinforces to the reader that red=Import and blue=Export.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-17"></span>
-<img src="images2/4-2-17.png" alt="Inking text data" width="346" />
+<img src="images2/4-2-17.png" alt="Inking text data" width="300" />
 <p class="caption">
 Figure 53: Inking text data
 </p>
@@ -2100,7 +2102,7 @@ Figure 54: Setting font format for Tooltips
 <p>Next, we will format the Tooltips number so that it only shows decimal places. First, right click on the variable in the <code>Rows</code> shelf and select <code>Format</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-18A"></span>
-<img src="images2/4-2-18A.png" alt="Formatting Tooltip number" width="230" />
+<img src="images2/4-2-18A.png" alt="Formatting Tooltip number" width="270" />
 <p class="caption">
 Figure 55: Formatting Tooltip number
 </p>
@@ -2128,7 +2130,7 @@ Figure 57: Removing borders and dividers
 <p>This removes all the external borders and dividers. In order to remove the internal gridlines, we will do as follows:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:4-2-19A"></span>
-<img src="images2/4-2-19A.png" alt="Removing chart gridlines" width="164" />
+<img src="images2/4-2-19A.png" alt="Removing chart gridlines" width="200" />
 <p class="caption">
 Figure 58: Removing chart gridlines
 </p>
@@ -2159,7 +2161,7 @@ Figure 60: Final Product of Overall Bar
 <li><p>Drag and drop the variables into the <code>Rows</code> and <code>Columns</code>. We will drag <code>Balance of Trade</code> twice. We do this so that one of the chart can serve as markers.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-51"></span>
-<img src="images2/4-2-22.png" alt="Measures for Overall Line" width="262" />
+<img src="images2/4-2-22.png" alt="Measures for Overall Line" width="300" />
 <p class="caption">
 Figure 61: Measures for Overall Line
 </p>
@@ -2168,7 +2170,7 @@ Figure 61: Measures for Overall Line
 <li><p>Two charts will appear. Click on the axis of the bottom chart, and select <code>Dual Axis</code> and then synchronize them to ensure that the circles and line add up.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-52"></span>
-<img src="images2/4-2-23.png" alt="Create a dual axis" width="148" />
+<img src="images2/4-2-23.png" alt="Create a dual axis" width="200" />
 <p class="caption">
 Figure 62: Create a dual axis
 </p>
@@ -2176,7 +2178,7 @@ Figure 62: Create a dual axis
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-53"></span>
-<img src="images2/4-2-24.png" alt="Synchronize" width="129" />
+<img src="images2/4-2-24.png" alt="Synchronize" width="200" />
 <p class="caption">
 Figure 63: Synchronize
 </p>
@@ -2226,7 +2228,7 @@ Figure 66: Final Product of Overall Line
 <li><p>Drag and drop the variables into the <code>Rows</code> and <code>Columns</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-57"></span>
-<img src="images2/4-2-28.png" alt="Measures for Overall Line" width="219" />
+<img src="images2/4-2-28.png" alt="Measures for Overall Line" width="300" />
 <p class="caption">
 Figure 67: Measures for Overall Line
 </p>
@@ -2235,7 +2237,7 @@ Figure 67: Measures for Overall Line
 <li><p>Drag and drop the <code>Country</code> variable into the detail box, as currently it is an aggregated point. This way each point will refer to a particular country.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-58"></span>
-<img src="images2/4-2-29.png" alt="Adding Country to detail" width="142" />
+<img src="images2/4-2-29.png" alt="Adding Country to detail" width="200" />
 <p class="caption">
 Figure 68: Adding Country to detail
 </p>
@@ -2244,7 +2246,7 @@ Figure 68: Adding Country to detail
 <li><p>Add filter for country. <br> This is done as we want to show the top 10 partners per year respective to Total Volume of Trade.<br><br> Drag and drop <code>Country</code> into the Filters box.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-59"></span>
-<img src="images2/4-2-30.png" alt="Add Country into Filters" width="110" />
+<img src="images2/4-2-30.png" alt="Add Country into Filters" width="200" />
 <p class="caption">
 Figure 69: Add Country into Filters
 </p>
@@ -2271,7 +2273,7 @@ Figure 71: Add Country to shape to customise the icons
 <p>On the right pane, the shape legend will come up. Select <code>Edit Shape</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-61"></span>
-<img src="images2/4-2-34.png" alt="Edit Shape under Shape legend" width="156" />
+<img src="images2/4-2-34.png" alt="Edit Shape under Shape legend" width="200" />
 <p class="caption">
 Figure 72: Edit Shape under Shape legend
 </p>
@@ -2280,7 +2282,7 @@ Figure 72: Edit Shape under Shape legend
 <p>Select relevant country icon pack. This icon pack was downloaded from <a href="https://www.flaticon.com/">Flaticon.com</a> and <a href="https://www.freepik.com">Freepik.com</a>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-62"></span>
-<img src="images2/4-2-35.png" alt="Adding custom icon pack" width="172" />
+<img src="images2/4-2-35.png" alt="Adding custom icon pack" width="300" />
 <p class="caption">
 Figure 73: Adding custom icon pack
 </p>
@@ -2291,7 +2293,7 @@ Figure 73: Adding custom icon pack
 <li>Click on the arrow button in the Data pane and select <code>Create Parameter</code>.
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-63"></span>
-<img src="images2/4-2-36.png" alt="Create Parameter" width="164" />
+<img src="images2/4-2-36.png" alt="Create Parameter" width="200" />
 <p class="caption">
 Figure 74: Create Parameter
 </p>
@@ -2300,7 +2302,7 @@ Figure 74: Create Parameter
 <li>Create the Year parameter
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-64"></span>
-<img src="images2/4-2-37.png" alt="Configuration for Year Parameter" width="291" />
+<img src="images2/4-2-37.png" alt="Configuration for Year Parameter" width="300" />
 <p class="caption">
 Figure 75: Configuration for Year Parameter
 </p>
@@ -2309,7 +2311,7 @@ Figure 75: Configuration for Year Parameter
 <li>Create the Quarter parameter
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-65"></span>
-<img src="images2/4-2-38.png" alt="Configuration for Quarter Parameter" width="294" />
+<img src="images2/4-2-38.png" alt="Configuration for Quarter Parameter" width="300" />
 <p class="caption">
 Figure 76: Configuration for Quarter Parameter
 </p>
@@ -2394,7 +2396,7 @@ Figure 84: Create Calculated Field: Net Importer
 <p>Drag and drop into the Tooltip box</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-72"></span>
-<img src="images2/4-2-44C.png" alt="Add to Tooltip" width="158" />
+<img src="images2/4-2-44C.png" alt="Add to Tooltip" width="200" />
 <p class="caption">
 Figure 85: Add to Tooltip
 </p>
@@ -2431,7 +2433,7 @@ Figure 87: Final product of MOTP(1)
 <li><p>This chart will look similar to the Overall Bar Chart that we created previously. First drag and drop the variables into the <code>Rows</code> and <code>Columns</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-75"></span>
-<img src="images2/4-2-46-1.png" alt="Measures for MOTP(2)" width="332" />
+<img src="images2/4-2-46-1.png" alt="Measures for MOTP(2)" width="300" />
 <p class="caption">
 Figure 88: Measures for MOTP(2)
 </p>
@@ -2463,7 +2465,7 @@ Figure 90: Drag and drop Total Volume of Trade into Rows
 <p>A third chart will appear below. Select the chart by clicking on the axis, and then select the sort button on the Toolbar above</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-78"></span>
-<img src="images2/4-2-46-4.png" alt="Select the chart" width="166" />
+<img src="images2/4-2-46-4.png" alt="Select the chart" width="200" />
 <p class="caption">
 Figure 91: Select the chart
 </p>
@@ -2471,7 +2473,7 @@ Figure 91: Select the chart
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-79"></span>
-<img src="images2/4-2-46-5.png" alt="Sort in ascending, so that highest appears on the right" width="92" />
+<img src="images2/4-2-46-5.png" alt="Sort in ascending, so that highest appears on the right" width="150" />
 <p class="caption">
 Figure 92: Sort in ascending, so that highest appears on the right
 </p>
@@ -2502,7 +2504,7 @@ Figure 94: Formatting the reference line
 <li><p>Editing Tooltips. Drag and drop the following variables into the Tooltip box.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-82"></span>
-<img src="images2/4-2-46-9.png" alt="Formatting the reference line" width="168" />
+<img src="images2/4-2-46-9.png" alt="Formatting the reference line" width="200" />
 <p class="caption">
 Figure 95: Formatting the reference line
 </p>
@@ -2702,7 +2704,7 @@ Figure 115: Country filter to be added
 <p>Edit shape and add the country icon pack as we did earlier.(see Figure <a href="#fig:4-2-33">71</a>)</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-103"></span>
-<img src="images2/4-2-65.png" alt="Customizing shape icons" width="203" />
+<img src="images2/4-2-65.png" alt="Customizing shape icons" width="300" />
 <p class="caption">
 Figure 116: Customizing shape icons
 </p>
@@ -2798,7 +2800,7 @@ Figure 125: Final product of Overall BOT chart
 <p>Drag and drop the following in <code>Columns</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-113"></span>
-<img src="images2/4-2-73.png" alt="Measures for Year buttons" width="175" />
+<img src="images2/4-2-73.png" alt="Measures for Year buttons" width="300" />
 <p class="caption">
 Figure 126: Measures for Year buttons
 </p>
@@ -2807,7 +2809,7 @@ Figure 126: Measures for Year buttons
 <p>Change the chart type to Shape and increase the size.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-114"></span>
-<img src="images2/4-2-74.png" alt="Change shape and size" width="128" />
+<img src="images2/4-2-74.png" alt="Change shape and size" width="200" />
 <p class="caption">
 Figure 127: Change shape and size
 </p>
@@ -2873,7 +2875,7 @@ Figure 133: Setting to Dimension and Change Aliases
 <p>Drag and drop <code>Qtr Buttons</code> into the label box.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-121"></span>
-<img src="images2/4-2-80.png" alt="Add quarter labels" width="130" />
+<img src="images2/4-2-80.png" alt="Add quarter labels" width="200" />
 <p class="caption">
 Figure 134: Add quarter labels
 </p>
@@ -2882,7 +2884,7 @@ Figure 134: Add quarter labels
 <p>Edit the aesthetics of the buttons and make the changes as we did for Year too.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:unnamed-chunk-122"></span>
-<img src="images2/4-2-81.png" alt="Formating the buttons" width="428" />
+<img src="images2/4-2-81.png" alt="Formating the buttons" width="440" />
 <p class="caption">
 Figure 135: Formating the buttons
 </p>
@@ -2908,45 +2910,81 @@ Figure 137: Using Actions
 </div>
 </div>
 <p>There will be 2 dynamics set using Actions.</p>
-<p>Parameter Actions. <br><code>Year Buttons</code> and <code>Qtr Buttons</code> will be set using these.<br> This will connect the values of the Year and Qtr buttons to the actual parameter selections. <br>Under Actions (as shown above), select <code>Add Action</code> and then <code>Change Parameter</code>.</p>
+<p>Parameter Actions: <br><code>Year Buttons</code> and <code>Qtr Buttons</code> will be set using these.<br> This will connect the values of the Year and Qtr buttons to the actual parameter selections. <br>Under Actions (as shown above), select <code>Add Action</code> and then <code>Change Parameter</code>. <code>{,fig.cap ="Adding Parameter Actions"} knitr::include_graphics('images2/4-2-85.png')</code> Select the corresponding Parameters that the button connects to as shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-85.png" width="192" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-125"></span>
+<img src="images2/4-2-86.png" alt="Connecting Year Buttons" width="310" />
+<p class="caption">
+Figure 138: Connecting Year Buttons
+</p>
 </div>
-<p>Select the corresponding Parameters that the button connects to as shown below.</p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-86.png" width="310" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-126"></span>
+<img src="images2/4-2-87.png" alt="Connecting Qtr Buttons" width="310" />
+<p class="caption">
+Figure 139: Connecting Qtr Buttons
+</p>
 </div>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-87.png" width="310" /></p>
 </div>
-<p>Highlight Action <br> 2 highlight actions will be set.</p>
+<p>Highlight Action: <br> 2 highlight actions will be set.</p>
 <p>The first one will be between <code>Overall Bar</code> and <code>Overall Line</code>. Any selection in either chart, will highlight the other charts at that particular year. Set the following settings. <br>Under Actions (as shown above), select <code>Add Action</code> and then <code>Highlight..</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-85B.png" width="192" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-127"></span>
+<img src="images2/4-2-85B.png" alt="Adding Highlight Actions" width="192" />
+<p class="caption">
+Figure 140: Adding Highlight Actions
+</p>
+</div>
 </div>
 <p>Set the settings shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-88.png" width="255" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-128"></span>
+<img src="images2/4-2-88.png" alt="Connecting MOTP to Balance of Trade" width="255" />
+<p class="caption">
+Figure 141: Connecting MOTP to Balance of Trade
+</p>
+</div>
 </div>
 <p>The second highlight action will be between the other 3 charts. This would be set up such that any selection of a Country bubble, will highlight the country in the other 2 charts. This way the reader can select any particular country he wishes to see.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-89.png" width="292" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-129"></span>
+<img src="images2/4-2-89.png" alt="Connecting Overall Bar and Line Charts" width="292" />
+<p class="caption">
+Figure 142: Connecting Overall Bar and Line Charts
+</p>
+</div>
 </div></li>
 <li><p><u>Adding animations</u></p>
 <p>To ensure that the charts transition smoothly, we will add animations.</p>
 <p>Under <code>Format</code>, select <code>Animations..</code></p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-90.png" width="154" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-130"></span>
+<img src="images2/4-2-90.png" alt="Adding Animations" width="200" />
+<p class="caption">
+Figure 143: Adding Animations
+</p>
+</div>
 </div>
 <p>When the Animations pane shows up on the right, make the following changes. It will be set to Slow so that the user can see the movements and track the ranking of the countries(via multi select) over time.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-91.png" width="162" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-131"></span>
+<img src="images2/4-2-91.png" alt="Setting the Animations for entire workbook" width="200" />
+<p class="caption">
+Figure 144: Setting the Animations for entire workbook
+</p>
+</div>
 </div></li>
 </ol>
 <h2 id="label">5. Final Visualization</h2>
 <p>The final interactive dashboard looks as such:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/Dashboard%201.jpg" width="750" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-132"></span>
+<img src="images2/Dashboard%201.jpg" alt="Final Dashboard" width="750" />
+<p class="caption">
+Figure 145: Final Dashboard
+</p>
+</div>
 </div>
 <p>To see the interactivity &amp; animations:</p>
 <p><a href="https://public.tableau.com/profile/aryah.umralkar.chopra#!/">Tableau Public Link</a></p>

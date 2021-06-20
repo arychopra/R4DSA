@@ -83,7 +83,9 @@ $$
 
    This is incorrect as linearly scaling the radius results in quadrupled area. 
 $$
-\text{Given that radius of the bigger circle = } r_{2} \\\text{, radius of smaller circle = } r_{1} \\
+\text{Given that radius of the bigger circle = } r_{2} \\
+\text{and, radius of smaller circle = } r_{1} \\
+\text{ }\\
 \text{ When the radius is linearly scaled i.e. } r_{2} = 2*r_{1}  \\
 \text{Ratios of the Circles = } \frac{\text{Bigger Circle}}{\text{Smaller Circle}} = \frac{\pi (2r_{1})^2}{\pi r_{1}} = 4 \\
 $$
@@ -216,28 +218,28 @@ The figure below shows a snapshot of the data:
 The data was prepared using Tableau Prep Building. 
 
 1. Load the Data.<br>First, drag and drop the data into the Home screen as shown below.
-   ```{r, fig.cap = "Measures to Rows/Columns shelf"}
+   ```{r, fig.cap = "Drag and drop the file", out.width=400}
    knitr::include_graphics('images2/4-1-1.png')
    ```
 2. Once the data has loaded into the screen, select `Use Data Interpreter`. This will remove unnecessary rows and columns.
-   ```{r, fig.cap = "Data Interpreter"}
+   ```{r, fig.cap = "Data Interpreter", out.width= 200}
    knitr::include_graphics('images2/4-1-2.png')
    ```
 3. Drag and drop T1 into the workspace
-   ```{r, fig.cap = "Drag and drop T1"}
+   ```{r, fig.cap = "Drag and drop T1", out.width=400}
    knitr::include_graphics('images2/4-1-3.png')
    ```
 4. Pivot the data.<br> Since the dates are in the columns and the variables (Countries) are row data, we need to pivot the data.
 
    Right click on the `Import` node and select `Pivot` from the drop down.
-   ```{r, fig.cap = "Select Pivot"}
+   ```{r, fig.cap = "Select Pivot", out.width= 200}
    knitr::include_graphics('images2/4-1-4.png')
    ```
    ```{r, fig.cap = "Pivot Node"}
    knitr::include_graphics('images2/4-1-5.png')
    ```
    Once that is done, select the first date `1976 Apr` + Shift + last date `2021 Mar`. Drag and drop into the `Pivoted Fields Section`.
-   ```{r, fig.cap = "Pivoting the date columns into rows"}
+   ```{r, fig.cap = "Pivoting the date columns into rows", out.width=400}
    knitr::include_graphics('images2/4-1-6.png')
    ``` 
 5. Cleaning the data:
@@ -257,7 +259,7 @@ The data was prepared using Tableau Prep Building.
    knitr::include_graphics('images2/4-1-9.png')
    ```
    Next, add the following formula:
-   ```{r, fig.cap = "Formula for Filter"}
+   ```{r, fig.cap = "Formula for Filter", out.width=320}
    knitr::include_graphics('images2/4-1-10.png')
    ```  
    
@@ -265,7 +267,7 @@ The data was prepared using Tableau Prep Building.
    Since the data also contains data by continents as well, we have to filer. The data by continents are in millions.
    
    Select the `Country` pane as we did above for dates, and add the following formula:
-   ```{r, fig.cap = "Filtering out continents"}
+   ```{r, fig.cap = "Filtering out continents", out.width=320}
    knitr::include_graphics('images2/4-1-11.png')
    ```
    
@@ -297,17 +299,17 @@ The data was prepared using Tableau Prep Building.
 8. Joining the two tables.
 
    Right click on Import's final step: Clean step and select `Join`.
-   ```{r, fig.cap = "Creating Join node"}
+   ```{r, fig.cap = "Creating Join node", out.width=200}
    knitr::include_graphics('images2/4-1-17.png')
    ```
    
    The `Join` node will appear. Drag and drop the final step in the Export flow and drop it into the Union node as shown.
-   ```{r, fig.cap = "Connecting Export node to Join"}
+   ```{r, fig.cap = "Connecting Export node to Join", out.width=300}
    knitr::include_graphics('images2/4-1-18.png')
    ```
    The workspace below will be prompted to add in the field for the join.<br>
    Add the following:
-   ```{r, fig.cap = "Selecting conditions for Join"}
+   ```{r, fig.cap = "Selecting conditions for Join", out.width=300}
    knitr::include_graphics('images2/4-1-19.png')
    ```
    A right join is used as there are more countries in Import than Export. This is to prevent any loss of data before the Final Clean.
@@ -330,7 +332,7 @@ The data was prepared using Tableau Prep Building.
     There are null values for the balance of trade as data for export for these countries does not exist. The total value of these make up a small percentage of the total data and hence we will exclude them. 
     
     Right click and select `Exclude`.
-    ```{r, fig.cap = "Excluding null values for BOT"}
+    ```{r, fig.cap = "Excluding null values for BOT", out.width=200}
     knitr::include_graphics('images2/4-1-22.png')
     ```
     
@@ -342,7 +344,7 @@ The data was prepared using Tableau Prep Building.
     knitr::include_graphics('images2/4-1-23.png')
     ```
 13. Right click on the `Final Clean` node and select `Preview in Tableau Desktop`.
-    ```{r, fig.cap = "Exporting to Tableau Desktop"}
+    ```{r, fig.cap = "Exporting to Tableau Desktop", out.width=200}
     knitr::include_graphics('images2/4-1-24.png')
     ```
     
@@ -351,7 +353,7 @@ The data was prepared using Tableau Prep Building.
 ### 4.3 Creating the Chart
 
 1. Right click on the `Country` variable in the `Data` pane and select `Aliases`. We will change the names so that they appear shorter in the labels/tooltips.
-   ```{r, fig.cap = "Adding aliases"}
+   ```{r, fig.cap = "Adding aliases", out.width=200}
    knitr::include_graphics('images2/4-2-1.png')
    ```
    ```{r, fig.cap = "Commit changes"}
@@ -372,13 +374,13 @@ The data was prepared using Tableau Prep Building.
 3. <u>Creating the first chart: Overall Bar</u>
    
    1. Drag and drop the variables into the `Rows` and `Columns`
-      ```{r, fig.cap = "Measures for Overall Bar"}
+      ```{r, fig.cap = "Measures for Overall Bar", out.width=300}
       knitr::include_graphics('images2/4-2-4.png')
       ```
       This will create 2 charts, one for the export and one for import on separate axis.
       
    2. Under the `All` Marks card, change the chart type to Bar. 
-      ```{r, fig.cap = "Change to Bar chart"}
+      ```{r, fig.cap = "Change to Bar chart", out.width=200}
       knitr::include_graphics('images2/4-2-5.png')
       ```
       By doing so, we have changed both charts to a bar type.
@@ -386,7 +388,7 @@ The data was prepared using Tableau Prep Building.
    3. We will invert the `Import` bar chart next. This is so that the reader can visually comprehend the total volume of trade at the particular Year.
    
       Right click on the `Import` y-axis and select `Edit Axis...`
-      ```{r 4-2-6, fig.cap = "Inverting Import Chart"}
+      ```{r 4-2-6, fig.cap = "Inverting Import Chart", out.width=200}
       knitr::include_graphics('images2/4-2-6.png')
       ```
       We will also truncate the bar chart and set the start point at SGD 350 Billion.
@@ -401,7 +403,7 @@ The data was prepared using Tableau Prep Building.
     
       Reference will be added at 2 points for both import and export: Minimum and Maximum. A third line will be added that will be shared between the two at 350 Billion. This is so that the reader knows the start point. <br><br>
       Right click on the `Export` y-axis and select `Add Reference Line`. 
-      ```{r, fig.cap = "Adding reference line"}
+      ```{r, fig.cap = "Adding reference line", out.width=200}
       knitr::include_graphics('images2/4-2-9.png')
       ```
       Add the following settings to the reference line.
@@ -413,39 +415,39 @@ The data was prepared using Tableau Prep Building.
       knitr::include_graphics('images2/4-2-11.png')
       ```
       The `Format` pane will be prompted on the left. <br>Under `Alignment` set the display to be in the center.  
-      ```{r, fig.cap = "Configuring the aesthetics of reference line"}
+      ```{r, fig.cap = "Configuring the aesthetics of reference line", out.width=200}
       knitr::include_graphics('images2/4-2-12.png')
       ```
       Under `Numbers`, set the display a abbreviated numbers. <br> Set the number to 2 decimals. 
-      ```{r 4-2-13, fig.cap = "Rounding up the numbers displayed"}
+      ```{r 4-2-13, fig.cap = "Rounding up the numbers displayed", out.width=300}
       knitr::include_graphics('images2/4-2-13.png')
       ```
       Repeat the above for Maximum and also for the Imports chart.<br><br>
       The line will be <b>red</b> for `Imports`.<br><br>
       The chart at this point will look like so:
-      ```{r, fig.cap = "Intermediate Chart"}
+      ```{r, fig.cap = "Intermediate Chart", out.width=323}
       knitr::include_graphics('images2/4-2-14.png')
       ```
    5. Next, we will set the color of the bar chart to be white, and only showing the border.<br> Select *blue* for `Export` and *red* for `Import`<br><br> This is done so that the colored bars do not overpower the chart and create redundant ink. 
     
       Set the colors of the bars:
-      ```{r 4-2-14A, fig.cap = "Setting up the colors of the bar chart"}
+      ```{r 4-2-14A, fig.cap = "Setting up the colors of the bar chart", out.width=200}
       knitr::include_graphics('images2/4-2-14A.png')
       ```
    6. Hide the axis for both chart. Right click on the axis/measure in the `Rows` shelf and un-check `Show Header`.
-      ```{r 4-2-15, fig.cap = "Hide axis"}
+      ```{r 4-2-15, fig.cap = "Hide axis", out.width=200}
       knitr::include_graphics('images2/4-2-15.png')
       ```
    7. Hide the field labels i.e. column labels. Right click on the label and select `Hide Field Labels for Columns`.
-      ```{r 4-2-45, fig.cap='Hide Field labels'}
+      ```{r 4-2-45, fig.cap='Hide Field labels', out.width=270}
       knitr:: include_graphics('images2/4-2-45.png')
       ```
-   8. Edit the title. Right click on the chart and edit as show. 
-      ```{r, fig.cap = "Editing the title"}
+   8. Edit the title. Right click on the chart and edit as shown. 
+      ```{r, fig.cap = "Editing the title", out.width=200}
       knitr::include_graphics('images2/4-2-16.png')
       ```
       Edit the title as shown below. Bold and color the words Import and Export and this reinforces to the reader that red=Import and blue=Export. 
-      ```{r 4-2-17, fig.cap = "Inking text data"}
+      ```{r 4-2-17, fig.cap = "Inking text data", out.width=300}
       knitr::include_graphics('images2/4-2-17.png')
       ```
    9. Edit tool tips. Select the `Tooltip` box under All marks card. 
@@ -456,7 +458,7 @@ The data was prepared using Tableau Prep Building.
       ```
       Next, we will format the Tooltips number so that it only shows decimal places.
       First, right click on the variable in the `Rows` shelf and select `Format`. 
-      ```{r 4-2-18A, fig.cap = "Formatting Tooltip number"}
+      ```{r 4-2-18A, fig.cap = "Formatting Tooltip number", out.width=270}
       knitr::include_graphics('images2/4-2-18A.png')
       ```
       Under both `Axis` and `Pane`, set the Number to only display 2 decimal places in the billions.
@@ -470,7 +472,7 @@ The data was prepared using Tableau Prep Building.
        knitr::include_graphics('images2/4-2-19.png')
        ```
        This removes all the external borders and dividers. In order to remove the internal gridlines, we will do as follows:
-       ```{r 4-2-19A, fig.cap = "Removing chart gridlines"}
+       ```{r 4-2-19A, fig.cap = "Removing chart gridlines", out.width=200}
        knitr::include_graphics('images2/4-2-19A.png')
        ```
        This is done as the grid lines are redundant ink. They have no purpose as any data required can be read directly through the Tooltips.
@@ -486,14 +488,14 @@ The data was prepared using Tableau Prep Building.
 4. <u>Creating the second chart: Overall Line chart</u>
   
    1. Drag and drop the variables into the `Rows` and `Columns`. We will drag `Balance of Trade` twice. We do this so that one of the chart can serve as markers.
-      ```{r, fig.cap = "Measures for Overall Line"}
+      ```{r, fig.cap = "Measures for Overall Line", out.width=300}
       knitr::include_graphics('images2/4-2-22.png')
       ```
    2. Two charts will appear. Click on the axis of the bottom chart, and select `Dual Axis` and then synchronize them to ensure that the circles and line add up.
-      ```{r, fig.cap = "Create a dual axis"}
+      ```{r, fig.cap = "Create a dual axis", out.width=200}
       knitr::include_graphics('images2/4-2-23.png')
       ```
-      ```{r, fig.cap = "Synchronize"}
+      ```{r, fig.cap = "Synchronize", out.width=200}
       knitr::include_graphics('images2/4-2-24.png')
       ```
    3. On the Marks pane, on either one of the charts, change the chart type to `Circle` and set the color to black. <br> This is done so that the point along the lines are bigger and clearer and the user can hover over the points easily. Aesthetically, it is easier to track the points when the markers are larger. 
@@ -529,16 +531,16 @@ The data was prepared using Tableau Prep Building.
    This chart is the re-visualization of the original chart.
    
    1. Drag and drop the variables into the `Rows` and `Columns`. 
-      ```{r, fig.cap = "Measures for Overall Line"}
+      ```{r, fig.cap = "Measures for Overall Line", out.width=300}
       knitr:: include_graphics('images2/4-2-28.png')
       ```
    2. Drag and drop the `Country` variable into the detail box, as currently it is an aggregated point. This way each point will refer to a particular country.
-      ```{r, fig.cap = "Adding Country to detail"}
+      ```{r, fig.cap = "Adding Country to detail", out.width=200}
       knitr:: include_graphics('images2/4-2-29.png')
       ```
    3. Add filter for country. <br> This is done as we want to show the top 10 partners per year respective to Total Volume of Trade.<br><br>
       Drag and drop `Country` into the Filters box.
-      ```{r,fig.cap = "Add Country into Filters"}
+      ```{r,fig.cap = "Add Country into Filters", out.width=200}
       knitr:: include_graphics('images2/4-2-30.png')
       ```
       Next we will make the changes as shown below. This will sieve out the top 10 by the `Total Volume of Trade` by the year. We will configure the year filter in the following few steps later on. 
@@ -550,24 +552,24 @@ The data was prepared using Tableau Prep Building.
       knitr:: include_graphics('images2/4-2-33.png')
       ```
       On the right pane, the shape legend will come up. Select `Edit Shape`.
-      ```{r, fig.cap = "Edit Shape under Shape legend"}
+      ```{r, fig.cap = "Edit Shape under Shape legend", out.width=200}
       knitr:: include_graphics('images2/4-2-34.png')
       ```
       Select relevant country icon pack. This icon pack was downloaded from [Flaticon.com](https://www.flaticon.com/) and [Freepik.com](https://www.freepik.com).
-      ```{r, fig.cap = "Adding custom icon pack"}
+      ```{r, fig.cap = "Adding custom icon pack", out.width=300}
       knitr:: include_graphics('images2/4-2-35.png')
       ```
    5. Creating parameter. The year and quarter will be user toggled, hence we will create two parameters.
       1. Click on the arrow button in the Data pane and select `Create Parameter`.
-         ```{r, fig.cap = "Create Parameter"}
+         ```{r, fig.cap = "Create Parameter", out.width=200}
          knitr:: include_graphics('images2/4-2-36.png')
          ```
       2. Create the Year parameter
-         ```{r, fig.cap = "Configuration for Year Parameter"}
+         ```{r, fig.cap = "Configuration for Year Parameter", out.width=300}
          knitr:: include_graphics('images2/4-2-37.png')
          ```
       3. Create the Quarter parameter
-         ```{r,fig.cap="Configuration for Quarter Parameter"}
+         ```{r,fig.cap="Configuration for Quarter Parameter", out.width=300}
          knitr:: include_graphics('images2/4-2-38.png')
          ```
    6. Next, we will create the calculated fields to link the parameter to. <br> Click on the arrow button in the Data pane and create 2 fields to be linked to the parameter.
@@ -605,7 +607,7 @@ The data was prepared using Tableau Prep Building.
        knitr:: include_graphics('images2/4-2-44B.png')
        ```
        Drag and drop into the Tooltip box
-       ```{r, fig.cap = "Add to Tooltip"}
+       ```{r, fig.cap = "Add to Tooltip", out.width=200}
        knitr:: include_graphics('images2/4-2-44C.png')
        ```
        Edit as shown below:
@@ -627,7 +629,7 @@ The data was prepared using Tableau Prep Building.
 
    1. This chart will look similar to the Overall Bar Chart that we created previously. 
       First drag and drop the variables into the `Rows` and `Columns`.
-      ```{r, fig.cap = "Measures for MOTP(2)"}
+      ```{r, fig.cap = "Measures for MOTP(2)", out.width=300}
       knitr:: include_graphics('images2/4-2-46-1.png')
       ```
    2. Drag and drop `Date Filter`, `Qtr Filter` and `Country` into the filters box. 
@@ -645,10 +647,10 @@ The data was prepared using Tableau Prep Building.
       knitr:: include_graphics('images2/4-2-46-3.png')
       ```
       A third chart will appear below. Select the chart by clicking on the axis, and then select the sort button on the Toolbar above
-      ```{r,fig.cap = "Select the chart"}
+      ```{r,fig.cap = "Select the chart", out.width=200}
       knitr:: include_graphics('images2/4-2-46-4.png')
       ```
-      ```{r,fig.cap = "Sort in ascending, so that highest appears on the right"}
+      ```{r,fig.cap = "Sort in ascending, so that highest appears on the right", out.width=150}
       knitr:: include_graphics('images2/4-2-46-5.png')
       ```
       By doing so, the chart will now be sorted according to `Total Volume of Trade`. 
@@ -671,7 +673,7 @@ The data was prepared using Tableau Prep Building.
       Repeat for `Imports`, labeling it as "Imports" and also using the same color as the bar chart (red)
       
    6. Editing Tooltips. Drag and drop the following variables into the Tooltip box.
-      ```{r,fig.cap = "Formatting the reference line"}
+      ```{r,fig.cap = "Formatting the reference line", out.width=200}
       knitr:: include_graphics('images2/4-2-46-9.png')
       ```
       Format is as follows:
@@ -763,7 +765,7 @@ The data was prepared using Tableau Prep Building.
       knitr:: include_graphics('images2/4-2-64.png')
       ```
       Edit shape and add the country icon pack as we did earlier.(see Figure \@ref(fig:4-2-33))
-      ```{r,fig.cap= "Customizing shape icons"}
+      ```{r,fig.cap= "Customizing shape icons", out.width=300}
       knitr:: include_graphics('images2/4-2-65.png')
       ```
       
@@ -813,11 +815,11 @@ The data was prepared using Tableau Prep Building.
    Instead of using the drop down for the parameter controls, we will create custom Year buttons for aesthetic purposes. 
    
    Drag and drop the following in `Columns`.
-   ```{r,fig.cap= "Measures for Year buttons"}
+   ```{r,fig.cap= "Measures for Year buttons", out.width=300}
    knitr:: include_graphics('images2/4-2-73.png')
    ``` 
    Change the chart type to Shape and increase the size. 
-   ```{r,fig.cap= "Change shape and size"}
+   ```{r,fig.cap= "Change shape and size", out.width=200}
    knitr:: include_graphics('images2/4-2-74.png')
    ```
    Drag and drop `Dates` to the Label box and edit as shown below so that the Year is displayed in the center of the circle
@@ -853,11 +855,11 @@ The data was prepared using Tableau Prep Building.
     knitr::include_graphics('images2/4-2-79.png')
     ```
     Drag and drop `Qtr Buttons` into the label box.
-    ```{r,fig.cap ="Add quarter labels"}
+    ```{r,fig.cap ="Add quarter labels", out.width=200}
     knitr::include_graphics('images2/4-2-80.png')
     ```
     Edit the aesthetics of the buttons and make the changes as we did for Year too.
-    ```{r,fig.cap ="Formating the buttons"}
+    ```{r,fig.cap ="Formating the buttons", out.width=440}
     knitr::include_graphics('images2/4-2-81.png')
     ```
     The buttons will look like so:
@@ -873,29 +875,29 @@ The data was prepared using Tableau Prep Building.
    
     There will be 2 dynamics set using Actions.
       
-    Parameter Actions. <br>`Year Buttons` and `Qtr Buttons` will be set using these.<br> This will connect the values of the Year and Qtr buttons to the actual parameter selections. <br>Under Actions (as shown above), select `Add Action` and then `Change Parameter`. 
-    ```{r}
+    Parameter Actions: <br>`Year Buttons` and `Qtr Buttons` will be set using these.<br> This will connect the values of the Year and Qtr buttons to the actual parameter selections. <br>Under Actions (as shown above), select `Add Action` and then `Change Parameter`. 
+    ```{,fig.cap ="Adding Parameter Actions"}
     knitr::include_graphics('images2/4-2-85.png')
     ```
     Select the corresponding Parameters that the button connects to as shown below.
-    ```{r}
+    ```{r,fig.cap ="Connecting Year Buttons"}
     knitr::include_graphics('images2/4-2-86.png')
     ```
-    ```{r}
+    ```{r,fig.cap ="Connecting Qtr Buttons"}
     knitr::include_graphics('images2/4-2-87.png')
     ```
-    Highlight Action <br> 2 highlight actions will be set.
+    Highlight Action: <br> 2 highlight actions will be set.
       
     The first one will be between `Overall Bar` and `Overall Line`. Any selection in either chart, will highlight the other charts at that particular year. Set the following settings. <br>Under Actions (as shown above), select `Add Action` and then `Highlight..`.
-    ```{r}
+    ```{r,fig.cap ="Adding Highlight Actions"}
     knitr::include_graphics('images2/4-2-85B.png')
     ```
     Set the settings shown below. 
-    ```{r}
+    ```{r,fig.cap ="Connecting MOTP to Balance of Trade"}
     knitr::include_graphics('images2/4-2-88.png')
     ```
     The second highlight action will be between the other 3 charts. This would be set up such that any selection of a Country bubble, will highlight the country in the other 2 charts. This way the reader can select any particular country he wishes to see. 
-    ```{r}
+    ```{r,fig.cap ="Connecting Overall Bar and Line Charts"}
     knitr::include_graphics('images2/4-2-89.png')
     ```
 12. <u>Adding animations</u>
@@ -903,18 +905,18 @@ The data was prepared using Tableau Prep Building.
     To ensure that the charts transition smoothly, we will add animations.
    
     Under `Format`, select `Animations..`
-    ```{r}
+    ```{r,fig.cap ="Adding Animations", out.width=200}
     knitr::include_graphics('images2/4-2-90.png')
     ```
     When the Animations pane shows up on the right, make the following changes. It will be set to Slow so that the user can see the movements and track the ranking of the countries(via multi select) over time. 
-    ```{r}
+    ```{r,fig.cap ="Setting the Animations for entire workbook", out.width=200}
     knitr::include_graphics('images2/4-2-91.png')
     ```
 ## 5. Final Visualization {#label}
 
 The final interactive dashboard looks as such:
 
-```{r}
+```{r,fig.cap ="Final Dashboard"}
 knitr::include_graphics('images2/Dashboard 1.jpg')
 ```
 To see the interactivity & animations:
