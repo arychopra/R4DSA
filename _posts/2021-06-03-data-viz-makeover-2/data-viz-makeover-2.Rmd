@@ -916,19 +916,19 @@ The data was prepared using Tableau Prep Building.
 
 The final interactive dashboard looks like so:
 
-### GIF Version
+### 5.1 Realtime Version
 
 ```{r, fig.cap="Final Visualization GIF"}
 knitr::include_graphics(path='images2/FinalViz.gif')
 ```
 
-### Image Version
+### 5.2 Image Version
 
 ```{r,fig.cap ="Final Dashboard"}
 knitr::include_graphics('images2/Dashboard 1.jpg')
 ```
 
-### Tableau Public Link
+### 5.3 Tableau Public Link
 
 [Tableau Public Link](https://public.tableau.com/profile/aryah.umralkar.chopra#!/)
 
