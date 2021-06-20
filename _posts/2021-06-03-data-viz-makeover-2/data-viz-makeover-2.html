@@ -1492,7 +1492,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#data-preparation">4.2 Data Preparation</a></li>
 <li><a href="#creating-the-chart">4.3 Creating the Chart</a></li>
 </ul></li>
-<li><a href="#final-visualization">5. Final Visualization</a></li>
+<li><a href="#label">5. Final Visualization</a></li>
 <li><a href="#insights">6. Insights</a></li>
 </ul>
 </nav>
@@ -2898,9 +2898,14 @@ Figure 136: Final product of Quarter buttons
 </div>
 </div></li>
 <li><p><u>Setting Up the Dashboard</u></p>
-<p>Once the charts have been positioned on the Dashboard, we will connect them. This will be done using <code>Actions</code>.</p>
+<p>Once the charts have been positioned on the Dashboard(See <a href="#label">Final Viz</a>), we will connect them. This will be done using <code>Actions</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="images2/4-2-84.png" width="275" /></p>
+<div class="figure"><span id="fig:unnamed-chunk-124"></span>
+<img src="images2/4-2-84.png" alt="Using Actions" width="275" />
+<p class="caption">
+Figure 137: Using Actions
+</p>
+</div>
 </div>
 <p>There will be 2 dynamics set using Actions.</p>
 <p>Parameter Actions. <br><code>Year Buttons</code> and <code>Qtr Buttons</code> will be set using these.<br> This will connect the values of the Year and Qtr buttons to the actual parameter selections. <br>Under Actions (as shown above), select <code>Add Action</code> and then <code>Change Parameter</code>.</p>
@@ -2938,7 +2943,7 @@ Figure 136: Final product of Quarter buttons
 <p><img src="images2/4-2-91.png" width="162" /></p>
 </div></li>
 </ol>
-<h2 id="final-visualization">5. Final Visualization</h2>
+<h2 id="label">5. Final Visualization</h2>
 <p>The final interactive dashboard looks as such:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="images2/Dashboard%201.jpg" width="750" /></p>
@@ -2946,30 +2951,36 @@ Figure 136: Final product of Quarter buttons
 <p>To see the interactivity &amp; animations:</p>
 <p><a href="https://public.tableau.com/profile/aryah.umralkar.chopra#!/">Tableau Public Link</a></p>
 <h2 id="insights">6. Insights</h2>
+<p><u> Overall Trade Insights</u><br> <i>Dashboard Section Reference: Singapore’s Overall Trade</i></p>
 <p>Singapore’s Balance of Trade has always been in a surplus.</p>
 <p>From 2011 to 2020, the surplus has increased by approximately 70% overall.</p>
 <p>If we look at the total volume over the years, the volume of trade in 2020 (940 Billion) is approximately the same as that in 2011 (943 Billion). However, the Balance of Trade is much higher. This is like the <a href="https://www.mas.gov.sg/monetary-policy/Singapores-Monetary-Policy-Framework/faqs/section-5">outcome of shifting saving and investment behaviours in the domestic economy</a>.</p>
-<p><u>Volume of Trade Insights</u></p>
+<p><u>Volume of Trade Insights</u><br> <i>Dashboard Section Reference: Singapore’s Trade Partners</i><br> <i>Chart Reference: Total Trade Volume of Top 10 Trade Partners</i></p>
 <ol type="1">
 <li><p>Once a prominent Trade Partner of Singapore, Indonesia’s trade with Singapore has been on a decrease since 2014.</p>
 <p>In 2011, total volume of Trade of Indonesia with Singapore was 81.56 Billion comparable to China’s 101.75 Billion, and was approximately 80% of the highest volume (Malaysia)</p>
 <p>In 2020, total volume of Indonesia went to 48.82 billion, compared to China’s 136.20 billion, making it 35.8% of the highest volume (China)</p>
-<p>The highest drop began in Quarter 3 of 2013.</p></li>
-<li><p>Consistently, Malaysia, China, United States and Hong Kong have been Singapore’s top trade partners over the years.</p></li>
-<li><p>We can see China’s meteoric rise in the world reflected in Singapore’s trade too.</p>
+<p>We can see that the highest drop began in Quarter 3 of 2013 due to the <a href="https://www.straitstimes.com/business/singapore-economy-may-be-adversely-affected-by-indonesia-slowdown-economists">plunge in rupiah</a>.</p></li>
+<li><p>Consistently, Malaysia, China, United States and Hong Kong have been Singapore’s top trade partners over the years and has extensive trade with most of the countries it has <a href="https://www.enterprisesg.gov.sg/non-financial-assistance/for-singapore-companies/free-trade-agreements/ftas/singapore-ftas">established trade agreements with</a>.</p></li>
+<li><p>We can see China’s <a href="https://www.everycrsreport.com/reports/RL33534.html">meteoric rise</a> in the world reflected in Singapore’s trade too.</p>
 <p>From 2011, China has risen up, very quickly establishing itself by the third quarter of 2015 as Singapore’s biggest partner.</p></li>
 <li><p>While the top 9 countries rotate between, China, Hong Kong, Malaysia, Taiwan, United States, Indonesia, Japan, South Korea, and Thailand.</p>
 <p>The 10th position is often changes. It is taken by U.A.E., Australia, India, Vietnam</p></li>
 </ol>
-<p><u>Balance of Trade Insights</u></p>
+<p><u>Balance of Trade Insights</u><br> <i>Dashboard Section Reference: A Closer Look</i><br> <i>Chart Reference: Balance of Trade (both)</i></p>
 <ol type="1">
 <li><p>Hong Kong has been in a trade surplus with Singapore consistently through the years.</p>
-<p>The surplus has increased by approximately 11%.</p></li>
+<p>The surplus has increased by approximately 11%.</p>
+<p>Hong Kong is the <a href="https://www.ship-technology.com/projects/port-hong-kong/">world’s leading cargo transshipment hub</a> and has a <a href="https://en.wikipedia.org/wiki/Hong_Kong%E2%80%93Singapore_relations#Trade_relations">long standing relationship with Singapore</a> since the 19th century. Trade has been active between these countries.</p></li>
 <li><p>In addition to a falling total trade volume with Indonesia, the trade surplus has also reduced over the years.</p>
 <p>From a surplus of 32 Billion in 2011 to 10.32 billion in 2020.</p></li>
-<li><p>Singapore was consistently in deficit with United States from 2011 - 2019. However, in 2020 Quarter 2, Singapore went into a surplus with United States, making United States the 6th highest surplus at 5.67 billion in 2020 overall</p></li>
-<li><p>While Vietnam is not in Singapore’s top 10 in terms of volume of trade, there is a sizeable trade surplus in the trade relationship. Consistently, approximately 20% of the largest surplus, ranging from 10-11 billion.</p></li>
-<li><p>Trade deficit has been consistently Taiwan and Saudi Arabia have been large, with Taiwan’s the largest since 2018.</p></li>
+<li><p>Singapore was consistently in deficit with United States from 2011 - 2019. However, in 2020 Quarter 2, Singapore went into a surplus with United States, making United States the 6th highest surplus at 5.67 billion in 2020 overall.</p>
+<p>This is likely due to the <a href="https://tradingeconomics.com/singapore/exports/united-states">Covid-19 Pandemic</a> and <a href="https://research.stlouisfed.org/publications/economic-synopses/2020/09/16/the-dynamics-of-the-u-s-trade-deficit-during-covid-19-the-role-of-essential-medical-goods">United States reliance on medical and pharmaceutical goods</a></p></li>
+<li><p>While Vietnam is not in Singapore’s top 10(Until 2020) in terms of volume of trade, there is a sizeable trade surplus in the trade relationship. Consistently, approximately 20% of the largest surplus, ranging from 10-11 billion.</p>
+<p>This is likely due to strengthening ties between Singapore and Vietnam were elevated to that of <a href="https://www.mfa.gov.sg/Overseas-Mission/Hanoi/Important-Information/Singapore-Vietnam-Relations#:~:text=Bilateral%20trade%20between%20Singapore%20and,in%20its%20human%20resource%20development">Strategic Partnership in 2013 encouraging investment and trade</a>.</p></li>
+<li><p>Trade deficit has been consistently large with Taiwan and Saudi Arabia, with Taiwan’s the largest since 2018.</p>
+<p>The major export of Saudi Arabia to Singapore is <a href="https://www.mfa.gov.sg/Overseas-Mission/Hanoi/Important-Information/Singapore-Vietnam-Relations#:~:text=Bilateral%20trade%20between%20Singapore%20and,in%20its%20human%20resource%20development">oil and plastic</a> which is crucial to Singapore’s manufacturing and electronics industry.</p>
+<p>Taiwan relationship with Singapore was further cemented in 2013</p></li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
