@@ -411,7 +411,7 @@ The data was prepared using Tableau Prep Building.
       knitr::include_graphics('images2/4-2-10.png')
       ```
       Once the line has been added to the chart, right click on the line and select `Format`.
-      ```{r, fig.cap = "Formating the line"}
+      ```{r, fig.cap = "Formating the line", out.width=200}
       knitr::include_graphics('images2/4-2-11.png')
       ```
       The `Format` pane will be prompted on the left. <br>Under `Alignment` set the display to be in the center.  
@@ -876,7 +876,7 @@ The data was prepared using Tableau Prep Building.
     There will be 2 dynamics set using Actions.
       
     Parameter Actions: <br>`Year Buttons` and `Qtr Buttons` will be set using these.<br> This will connect the values of the Year and Qtr buttons to the actual parameter selections. <br>Under Actions (as shown above), select `Add Action` and then `Change Parameter`. 
-    ```{,fig.cap ="Adding Parameter Actions"}
+    ```{r,fig.cap ="Adding Parameter Actions"}
     knitr::include_graphics('images2/4-2-85.png')
     ```
     Select the corresponding Parameters that the button connects to as shown below.
@@ -914,12 +914,21 @@ The data was prepared using Tableau Prep Building.
     ```
 ## 5. Final Visualization {#label}
 
-The final interactive dashboard looks as such:
+The final interactive dashboard looks like so:
+
+### GIF Version
+
+```{r, fig.cap="Final Visualization GIF"}
+knitr::include_graphics(path='images2/FinalViz.gif')
+```
+
+### Image Version
 
 ```{r,fig.cap ="Final Dashboard"}
 knitr::include_graphics('images2/Dashboard 1.jpg')
 ```
-To see the interactivity & animations:
+
+### Tableau Public Link
 
 [Tableau Public Link](https://public.tableau.com/profile/aryah.umralkar.chopra#!/)
 
