@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 1. Introduction
 
-The data in this makeover is the Merchandise Trade volume of Singapore from January 2011 to December 2020. 
+The data in this makeover is the Merchandise Trade volume of Singapore from January 2011 to December 2020. <br>
 
 The data was retrieved from the [Department of Statistics, Singapore (DOS)](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data).
 
