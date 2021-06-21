@@ -482,7 +482,7 @@ The data was prepared using Tableau Prep Building.
        knitr::include_graphics('images2/4-2-20.png')
        ```
    12. The chart will look like so:
-       ```{r, fig.cap = "Final Product of Overall Bar"}
+       ```{r, fig.cap = "Final Product of Overall Bar", out.width=350}
        knitr::include_graphics('images2/4-2-21.png')
        ```
 4. <u>Creating the second chart: Overall Line chart</u>
@@ -514,15 +514,20 @@ The data was prepared using Tableau Prep Building.
       ```{r, fig.cap = "Truncating the y-axis"}
       knitr:: include_graphics('images2/4-2-26.png')
       ```
-   6. Make the changes to the Tooltip as well as the title as we did for the previous chart.(see Figures \@ref(fig:4-2-17) \@ref(fig: 4-2-18))
-      This time using the color *green* to mark the `Balance of Trade`.
-      
+   6. Make the changes to the Tooltip (see Figure \@ref(fig:4-2-17)) as well as the title as we did for the previous chart.(see Figure \@ref(fig:4-2-18))
+      This time using the color *green* to mark the `Balance of Trade` as shown below:
+      ```{r,fig.cap = "Overall Line title", out.width=300}
+      knitr:: include_graphics('images2/4-2-26A.png')
+      ```
+      ```{r,fig.cap = "Tooltip layout"}
+      knitr:: include_graphics('images2/4-2-26B.png')
+      ```
    7. Set the numbers to 2 decimal places for the tooltips (see Figure \@ref(fig:4-2-18A)) and reference lines(see Figure \@ref(fig:4-2-13))
    
    8. Remove all gridlines (see Figures \@ref(fig:4-2-19)) and axis lines (see Figures \@ref(fig:4-2-19A))) as we did earlier.
       
    9. The chart will look like so:
-      ```{r, fig.cap = "Final Product of Overall Line"}
+      ```{r, fig.cap = "Final Product of Overall Line", out.width=350}
       knitr:: include_graphics('images2/4-2-27.png')
       ```
   
@@ -616,10 +621,10 @@ The data was prepared using Tableau Prep Building.
        ```
    11. Remove all grid lines/headers/field labels as we did previously<br>
        See figures:
-        * Hiding Axis: \@ref(fig:4-2-15) 
-        * Outer gridlines: \@ref(fig:4-2-19)
-        * Inner gridlines: \@ref(fig:4-2-19A)
-        * Hide field labels: \@ref(fig:4-2-45)
+        * Hiding Axis: See Figure \@ref(fig:4-2-15) 
+        * Outer gridlines: See Figure \@ref(fig:4-2-19)
+        * Inner gridlines: See Figure \@ref(fig:4-2-19A)
+        * Hide field labels: See Figure \@ref(fig:4-2-45)
         
    12. The chart will look like so:
        ```{r, fig.cap = "Final product of MOTP(1)"}
@@ -634,8 +639,8 @@ The data was prepared using Tableau Prep Building.
       ```
    2. Drag and drop `Date Filter`, `Qtr Filter` and `Country` into the filters box. 
    
-       * Add `Date Filter` and `Qtr Filter` to context (see Figure \@ref(fig:4-2-42))
-       * The `Country` should be filtered by Total Volume of Trade as MOTP (1) would be linked to this chart as shown below. 
+      Add `Date Filter` and `Qtr Filter` to context (see Figure \@ref(fig:4-2-42))<br><br>
+      The `Country` should be filtered by Total Volume of Trade as MOTP (1) would be linked to this chart as shown below. 
          ```{r, fig.cap = "Filters to be added"}
          knitr:: include_graphics('images2/4-2-46-2.png')
          ```
@@ -728,7 +733,7 @@ The data was prepared using Tableau Prep Building.
          ```{r,fig.cap= "Color coding"}
          knitr:: include_graphics('images2/4-2-56.png')
          ```
-   7. Set the color of the bars to white and only display the *black* borders, just as we did previously.(see Figure @\ref(fig:4-2-14A)) This allows the colors of the labels to be in contrast.
+   7. Set the color of the bars to white and only display the *black* borders, just as we did previously.(see Figure \@ref(fig:4-2-14A)) This allows the colors of the labels to be in contrast.
    
    8. Edit the axis
       1. Set the tick to a very large value as we will only show the zero mark. 
@@ -744,7 +749,7 @@ The data was prepared using Tableau Prep Building.
       knitr:: include_graphics('images2/4-2-60.png')
       ```
    10. The chart will look like so:
-       ```{r,fig.cap= "Final product of Balance of Trade Chart"}
+       ```{r,fig.cap= "Final product of Balance of Trade Chart", out.width=350}
        knitr:: include_graphics('images2/4-2-61.png')
        ```
 8. <u>Creating the fifth chart: Overall Balance of Trade</u>
@@ -807,7 +812,7 @@ The data was prepared using Tableau Prep Building.
       knitr:: include_graphics('images2/4-2-70.png')
       ```
    8. The chart will look like so:
-      ```{r,fig.cap= "Final product of Overall BOT chart"}
+      ```{r,fig.cap= "Final product of Overall BOT chart", out.width=350}
       knitr:: include_graphics('images2/4-2-72.png')
       ```
 9. <u>Creating the Year buttons</u> 
@@ -815,7 +820,6 @@ The data was prepared using Tableau Prep Building.
    Instead of using the drop down for the parameter controls, we will create custom Year buttons for aesthetic purposes. 
    
    Drag and drop the following in `Columns`.
-   ```{r,fig.cap= "Measures for Year buttons", out.width=300}
    knitr:: include_graphics('images2/4-2-73.png')
    ``` 
    Change the chart type to Shape and increase the size. 
