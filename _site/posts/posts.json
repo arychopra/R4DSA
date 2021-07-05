@@ -1,22 +1,5 @@
 [
   {
-    "path": "posts/2021-07-05-the-vast-challenge/",
-    "title": "The Vast Challenge",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Aryah U. Chopra",
-        "url": "https://www.linkedin.com/in/aryahuc/"
-      }
-    ],
-    "date": "2021-07-05",
-    "categories": [],
-    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2021-07-05T18:17:58+08:00",
-    "input_file": "the-vast-challenge.utf8.md"
-  },
-  {
     "path": "posts/2021-06-03-data-viz-makeover-2/",
     "title": "Data Viz Makeover 2",
     "description": "A Closer Look at Singapore's Trade Partners",
