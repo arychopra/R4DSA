@@ -167,3 +167,19 @@ d-title h1{
   line-height: 1.75em;
   text-align: center;
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(249, 83, 85, 0.20);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(249, 83, 85, 0.30);
+}
