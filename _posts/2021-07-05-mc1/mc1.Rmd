@@ -474,6 +474,7 @@ explore(news_corpus)
 
 ```
 
+
 Corpora Explorer -  To Analyse the Texts by Date
 
 ```{r corpora_explorer_date, eval=FALSE, message=FALSE}
@@ -492,6 +493,7 @@ news_corpus_date <- prepare_data(
 explore(news_corpus_date)
 
 ```
+
 
 Re-making the functions for building text visuals:
 
@@ -1268,10 +1270,15 @@ for (i in unique(g_before_ngrams2$group)){
 
       show(p)
       
+      
+      
     
 }
 
 ```
+
+
+
 
 ```{r specific, eval=F}
 
@@ -1298,7 +1305,7 @@ g_before_ngrams2 <- df.news %>%
   
   
                       group_by(SOURCE) %>%
-                      top_n(n=80, wt=n) %>%
+                      #top_n(n=30, wt=n) %>%
                       relocate(SOURCE, .after = last_col()) %>%
                       rename("from"="word1",
                              "to"="word2",
@@ -1306,11 +1313,13 @@ g_before_ngrams2 <- df.news %>%
                              "group"="SOURCE")
 
 g_before_ngrams_specific <- g_before_ngrams2 %>% 
-                             filter(group=="Kronos Star") #%>%
-                             #filter(from == "pok" | to=="pok" | from == "government" | to == "government") 
-
- e <- g_before_ngrams_specific %>% 
-            filter(group =="Kronos Star")
+                            filter(group=="International Times")%>%
+                            #filter(from %in% c("pok","elodis","police","government")|to %in% c("pok","elodis","police","government"))
+                            #filter(from %in% c("gastech","international", "kronos","sanjorge")| to %in% c("gastech","international","kronos", "sanjorge")) 
+                            filter(from %in% c("people","kronos","pok")|to %in% c("people","kronos", "pok"))
+          
+      e <- g_before_ngrams_specific #%>% 
+            #filter(group=="Homeland Illumination")
       
       n <- e %>% 
             ungroup() %>%
@@ -1318,32 +1327,64 @@ g_before_ngrams_specific <- g_before_ngrams2 %>%
             pivot_longer(cols=c("from","to")) %>% 
             left_join(get_sentiments("bing"), by=c("value"="word")) %>%
             replace_na(replace = list(sentiment = "none")) %>%
-            mutate(color = ifelse(sentiment=="negative", "blue", 
+            mutate(color.background = ifelse(sentiment=="negative", "blue", 
                                 ifelse(sentiment=="none", "grey",
                                        "red"))) %>%
-            select(value, color) %>%
+            select(value, color.background) %>%
             rename("id" = "value") %>%
-            group_by(id,color) %>%
+            group_by(id,color.background) %>%
             summarise(n=n())
 
       n$label <- n$id
+      n$color.highlight.background <- "brown"
+      n$color.border <- "black"
+      e$color <- "gray" 
+      
 
-      p<-visNetwork(n=n, 
+      p<-visNetwork(n = n, 
                     edges = e, 
-                    main = list(text = paste("News Source: ",i),
+                    main = list(text = paste("News Source: ",unique(e$group)),
                                        style = "font-family:Verdana;font-weight:600;color:#000000;font-size:20px;text-align:center;")
                     )  %>% 
-          visEdges(arrows = "middle") %>%
+          visEdges(arrows = "middle", color = list(highlight = "brown")) %>%
           visNodes(font = list(size =34, style="font-weight:600")) %>%
-          visIgraphLayout(physics = F) %>%
-          visOptions(highlightNearest = T, 
-                     nodesIdSelection = T) %>%
+          visIgraphLayout(physics = F, layout = "layout_nicely") %>%
+          visOptions(highlightNearest = list(enabled = T, 
+                                             algorithm = "all",
+                                             degree = 0), 
+                     nodesIdSelection = T
+                    ) %>%
           visInteraction(multiselect = TRUE)
-
-      show(p)
-
+      
+      
 ```
 
+
+```{r }
+  g <- graph_from_data_frame(d = e,
+                             directed = T,
+                             vertices = n)
+
+  size <- betweenness(g)
+  size <- size/700
+
+  nodes_p <- data.frame(id = V(g)$name, 
+                        size =  size,
+                        label=V(g)$name)
+  e_p <- get.data.frame(g, what="edges")
+  
+  visNetwork(nodes = nodes_p, 
+             edges = e_p) %>% visIgraphLayout(layout = 'layout_nicely')
+  
+```
+
+
+
+```{r}
+set.seed(390)
+p
+
+```
 
 
 ```{r, eval=F}
@@ -1437,11 +1478,6 @@ for (i in unique(dtm_corpus$Membership)){
 }
 
 ```
-
-
-
-
-
 
 
 
@@ -1598,6 +1634,7 @@ visNetwork(nodes3, edges3) %>%
 ```
 
 Communities based on Weights
+
 ```{r, warning=F, message=F}
 email_network4 <- graph_from_data_frame(d = links, 
                                         vertices = nodes_df, 
@@ -1620,6 +1657,7 @@ visNetwork(nodes3, edges3) %>%
   visEdges(arrows = "middle") %>% 
   visIgraphLayout(layout = 'layout.davidson.harel')
 ```
+
 
 ```{r, warning=F, message=F}
 g <- graph_from_data_frame(links,vertices = nodes_df, directed = T)
@@ -1774,27 +1812,58 @@ As discussed previously, News Online Today, likely an online source, is a short 
 
 ### 5.2 Question 2
 
+Using Latent Dichrelet Allocations, we have identified the following topics in the different clusters found above.
+
+We can get a general idea of the topics that each of the clusters covers:
+
 ```{r}
 knitr::include_graphics('images/5-1-6-1.png')
 ```
+
+
+```{r}
+knitr::include_graphics('images/5-1-10.png')
+```
+
 
 ```{r}
 knitr::include_graphics('images/5-1-6-2.png')
 ```
 
+
+```{r}
+knitr::include_graphics('images/5-1-11.png')
+```
+
+
 ```{r}
 knitr::include_graphics('images/5-1-6-3.png')
 ```
 
+
+```{r}
+knitr::include_graphics('images/5-1-12.png')
+```
+
+
 ```{r}
 knitr::include_graphics('images/5-1-6-4.png')
 ```
+
+
+```{r}
+knitr::include_graphics('images/5-1-13.png')
+```
+
 
 ```{r}
 knitr::include_graphics('images/5-1-6-5.png')
 ```
 
 
+```{r}
+knitr::include_graphics('images/5-1-14.png')
+```
 
 
 
