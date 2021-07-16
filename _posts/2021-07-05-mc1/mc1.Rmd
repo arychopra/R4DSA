@@ -1315,8 +1315,8 @@ g_before_ngrams2 <- df.news %>%
 g_before_ngrams_specific <- g_before_ngrams2 %>% 
                             filter(group=="International Times")%>%
                             #filter(from %in% c("pok","elodis","police","government")|to %in% c("pok","elodis","police","government"))
-                            #filter(from %in% c("gastech","international", "kronos","sanjorge")| to %in% c("gastech","international","kronos", "sanjorge")) 
-                            filter(from %in% c("people","kronos","pok")|to %in% c("people","kronos", "pok"))
+                            filter(from %in% c("gastech","international", "kronos","sanjorge","pok","elodis","protector")| to %in% c("gastech","international","kronos", "sanjorge","pok","elodis","protector")) 
+                            #filter(from %in% c("people","kronos","pok")|to %in% c("people","kronos", "pok"))
           
       e <- g_before_ngrams_specific #%>% 
             #filter(group=="Homeland Illumination")
@@ -1364,7 +1364,7 @@ g_before_ngrams_specific <- g_before_ngrams2 %>%
   g <- graph_from_data_frame(d = e,
                              directed = T,
                              vertices = n)
-
+  g <- simplify(g)
   size <- betweenness(g)
   size <- size/700
 
@@ -1373,8 +1373,9 @@ g_before_ngrams_specific <- g_before_ngrams2 %>%
                         label=V(g)$name)
   e_p <- get.data.frame(g, what="edges")
   
+  
   visNetwork(nodes = nodes_p, 
-             edges = e_p) %>% visIgraphLayout(layout = 'layout_nicely')
+             edges = e_p) %>% visIgraphLayout()#layout = 'layout_nicely')
   
 ```
 
@@ -1547,6 +1548,7 @@ p
 Centrality Based Networks
 
 Sizing by Betweeness Centrality
+
 ```{r, warning=F, message=F}
 email_network3 <- graph_from_data_frame(d = links, 
                                         vertices = nodes_df, 
@@ -1575,7 +1577,9 @@ q<-visNetwork(nodes2, edges2) %>%
 q
 ```
 
+
 Sizing by Eigenvalue Centrality
+
 ```{r, warning=F, message=F}
 email_network4 <- graph_from_data_frame(d = links, 
                                         vertices = nodes_df, 
@@ -1601,7 +1605,9 @@ visNetwork(nodes3, edges3) %>%
   visLegend(enabled = T)
 ```
 
+
 Seeing Closeness
+
 ```{r, eval=FALSE, warning=F, message=F}
 email_network4 <- graph_from_data_frame(d = links, 
                                         vertices = nodes_df, 
@@ -1827,12 +1833,22 @@ knitr::include_graphics('images/5-1-10.png')
 
 
 ```{r}
+knitr::include_graphics('images/5-1-10A.png')
+```
+
+
+
+```{r}
 knitr::include_graphics('images/5-1-6-2.png')
 ```
 
 
 ```{r}
 knitr::include_graphics('images/5-1-11.png')
+```
+
+```{r}
+knitr::include_graphics('images/5-1-11A.png')
 ```
 
 
@@ -1847,12 +1863,24 @@ knitr::include_graphics('images/5-1-12.png')
 
 
 ```{r}
+knitr::include_graphics('images/5-1-12A.png')
+```
+
+
+
+
+```{r}
 knitr::include_graphics('images/5-1-6-4.png')
 ```
 
 
 ```{r}
-knitr::include_graphics('images/5-1-13.png')
+knitr::include_graphics('images/5-1-14.png')
+```
+
+
+```{r}
+knitr::include_graphics('images/5-1-14A.png')
 ```
 
 
@@ -1862,10 +1890,13 @@ knitr::include_graphics('images/5-1-6-5.png')
 
 
 ```{r}
-knitr::include_graphics('images/5-1-14.png')
+knitr::include_graphics('images/5-1-13.png')
 ```
 
 
+```{r}
+knitr::include_graphics('images/5-1-13A.png')
+```
 
 ### 5.3 Question 3
 
