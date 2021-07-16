@@ -1360,7 +1360,7 @@ g_before_ngrams_specific <- g_before_ngrams2 %>%
 ```
 
 
-```{r }
+```{r,eval=FALSE}
   g <- graph_from_data_frame(d = e,
                              directed = T,
                              vertices = n)
@@ -1380,7 +1380,7 @@ g_before_ngrams_specific <- g_before_ngrams2 %>%
 
 
 
-```{r}
+```{r,eval=FALSE}
 set.seed(390)
 p
 
