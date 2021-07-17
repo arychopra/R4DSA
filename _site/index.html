@@ -2275,6 +2275,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     background-color: rgba(255, 255, 255, 0.90);  
     line-height: 1.75em;
     text-align: center;
+  }
+  
+  ::-webkit-scrollbar{
+      width: 10px;
+      height: 5px;
+  }
+  ::-webkit-scrollbar-track{
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+      background: rgba(249, 83, 85, 0.20);
+      border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background: rgba(249, 83, 85, 0.30);
   }</style>
   <style type="text/css">
   /* base style */
@@ -2606,23 +2622,6 @@ function init_posts_list() {
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Data Science &amp; Analytics">Data Science &amp; Analytics</h1>
-<a href="posts/2021-07-05-mc1/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">July 4, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Aryah U. Chopra</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-05-mc1/images/3-1-0.png"/>
-</div>
-<div class="description">
-<h2>The Vast Challenge</h2>
-<div class="dt-tags"></div>
-<p>Mini Challenge 1</p>
-</div>
-</a>
 <a href="posts/2021-06-03-data-viz-makeover-2/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
@@ -2662,7 +2661,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Data Science &amp; Analytics</h1>
